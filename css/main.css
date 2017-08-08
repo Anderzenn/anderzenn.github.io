@@ -172,10 +172,6 @@ hr {
 	margin-top: 40px;
 	height: 340px;
 	line-height: 340px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
 }
 
 .aFooter {
@@ -198,8 +194,9 @@ hr {
 .article {
 	position: relative;
 	height: 510px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
 	box-shadow: 0px 0px 10px #000;
 }
 
