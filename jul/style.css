@@ -5,6 +5,32 @@
 	font-family: 'Helvetica', sans-serif;
 }
 
+@media only screen and (max-width:620px) {
+	/* For mobile phones: */
+	.banner {
+	}
+	
+	.header {
+		height: 200px!important;
+	}
+	
+	.header h1 {
+		top: 30%!important;
+		bottom: 30%!important;
+		
+		vertical-align: middle!important;
+	}
+  
+	.centerContent {
+		margin: 0 auto;
+		max-width: 100%!important;
+	}
+  
+	.article {
+		width: 92%!important;
+	}
+}
+
 table, th, td {
     border-bottom: 2px solid #FFBB00;
     border-collapse: collapse;
