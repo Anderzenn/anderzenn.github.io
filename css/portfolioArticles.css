@@ -1,0 +1,65 @@
+#portfolio {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 800px;
+	background: #fff;
+	margin-bottom: 40px;
+}
+
+#portfolio h2 {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	font-size: 26px;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.portfolioArticle {
+	height: 290px;
+	width: 382px;
+	background: #E8E8E8;
+	display: inline-block;
+	margin: 20px;
+	border: solid 2px #E8E8E8;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.portfolioArticle:hover {
+	cursor: pointer;
+}
+
+.portfolioArticle img {
+	height: 250px;
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: none;
+}
+
+.portfolioArticle .articleText {
+	word-wrap: break-word;
+	padding: 5px;
+}
+
+.portfolioArticle .articleTitle, .portfolioArticle .date {
+	padding: 0px 5px;
+	width: 100%;
+}
+
+.portfolioArticle .articleTitle {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.portfolioArticle .date {
+	font-size: 13px;
+}

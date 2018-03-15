@@ -1,110 +1,187 @@
+<!--
+	Created by Mads Rosengren Andersen.
+
+	####      CURRENT ISSUES     ####
+	If text in articles gets too long it causes issues with alignment.
+		- Possible fix: limit amount of words articles can show.
+		
+	####       THINGS TODO       ####
+	Add actual content
+	
+-->
+
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Danish Motovlogger</title>
+		<link href="img/ANDZ.ico" rel="shortcut icon" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-		<link rel="icon" href="img/logo/ANDZ.png" type="image/x-icon">
-		<link rel="shortcut icon" href="img/logo/ANDZ.png" type="image/x-icon">
-		<title>Anderzenn' Game Ideas</title>
+		<link rel="stylesheet" type="text/css" href="css/newsArticles.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolioArticles.css">
+		<link rel="stylesheet" type="text/css" href="css/modal.css">
+		<link rel="stylesheet" type="text/css" href="css/slideshowStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="preload" as="image" href="img/carousel/img1.jpg">
+		<link rel="preload" as="image" href="img/carousel/img2.jpg">
+		<link rel="preload" as="image" href="img/carousel/img3.jpg">
+		<link rel="preload" as="image" href="img/carousel/img4.jpg">
 	</head>
 	<body>
-		<div class="header">
-			<div class="navigation wrapper">
-				<div class="navImgDiv left">
-					<a href="index.html"><img src="img/logo/ANDZ.svg" alt="ANDZ Logo" class="navImg"/></a>
-				</div>
-				<nav class="mainNav left">
-					<ul>
-						<li><a href="#" class="active">HOME</a></li>
-						<li><a href="#">GAMES</a></li>
-					</ul>
-				</nav>
-				<div class="navAccount right">
-					<nav class="right">
-						<ul>
-							<!--<li><a href="http://www.github.io" class="icon-social-github github"> <span class="github-pow">Powered by GitHub.io</span></a></li>
-							<li><a href="#">LOGIN</a></li>
-							<li><a href="#">SIGNUP</a></li>-->
-						</ul>
-					</nav>
-				</div>
+		<div id="bcktt">
+			<a href="#top"><i class="icon ion-arrow-up-b"></i></a>
+		</div>
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content clearfix">
+				<span class="close ion-close-round"></span>
+				<img src="portfolio/images/hjemmeside.jpg">
 			</div>
 		</div>
-		<div class="main wrapper">
-			<div class="articles">
-				<div class="articleTitle">
-					<h2>Game Ideas</h2>
-				</div>
-				<hr>
-				<div class="article left">
-					<div class="articleCont">
-						<div class="article-img">
-							<img src="img/articles/low-poly-quest-game.png" alt="Low-Poly Quest RPG Type Game" class="articleImg" />
+		<div id="content">
+			<div id="top" class="header">
+				<h1><a href="" style="color: #fff;">Mads <img class="titleIcon" src="img/ANDZ.svg"/> Andersen</a></h1>
+				<ul class="nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#newsfeed">News Feed</a></li>
+					<li><a href="#instafeed">Instagram</a></li>
+				</ul>
+			</div>
+			<div id="home" class="someContent">
+				<div class="mySlides">
+					<div class="slides">
+						<div>
+							<img src="img/carousel/img1.jpg" style="width: 100%;">
+							<div class="captionStyleOne">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nulla porttitor, luctus nulla id, porttitor leo.</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 1</div>
 						</div>
-						<div class="article-text">
-							<a href="#"><strong>Low-Poly Quest RPG</strong></a>
-							<p>8th August 2017</p>
-							<article>
-								&bull; Low Poly<br>
-								&bull; Quests<br>
-								&bull; Isometric<br>
-								&bull; Character Customization?<br>
-								&bull; Enemies<br>
-								&bull; Inventory<br>
-								&bull; Loot<br>
-								&bull; 3D<br>
-								&bull; Multiplayer?<br>
-								&bull; Open World?
-							</article>
+						<div>
+							<img src="img/carousel/img2.jpg" style="width: 100%;">
+							<div class="captionStyleTwo">In tincidunt eget urna a mollis.</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 2</div>
 						</div>
-						<div class="article-footer">
-							<a href="#"><strong>Click here to read more</strong></a>
+						<div>
+							<img src="img/carousel/img3.jpg" style="width: 100%;">
+							<div class="captionStyleFour">Aliquam ultrices metus ac leo pharetra finibus.</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 3</div>
 						</div>
-					</div>
-				</div>
-				<div class="article left">
-					<div class="articleCont">
-						<div class="article-img">
-							<img src="img/articles/stoneage-banner.jpg" alt="Stone-Age Type Game" class="articleImg" />
-						</div>
-						<div class="article-text">
-							<a href="#"><strong>Stone-Age Type Game</strong></a>
-							<p>7th August 2017</p>
-							<article>
-								- Gather Resources<br>
-								- Craft Items From Resources<br>
-								- Evolve<br>
-								- Make Houses<br>
-								- Simplistic Graphics/Contols?<br>
-								- Survive<br>
-								- Top Down 2D<br>
-								- Multiplayer?<br>
-								- Quests/Missions<br>
-							</article>
-						</div>
-						<div class="article-footer">
-							<a href="#"><strong>Click here to read more</strong></a>
+						<div>
+							<img src="img/carousel/img4.jpg" style="width: 100%;">
+							<div class="captionStyleTree">Nunc lobortis lorem purus, in maximus magna sagittis dictum. Curabitur sit amet lacus ultricies, tempor elit vitae, imperdiet augue.</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 4</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--<div class="featured">
-				<div class="feature">
-					
+			<div id="portfolio" class="clearfix">
+				<h2>Portfolio</h2>
+				
+				<div class="feedContent">
+					<div class="portfolioArticle clearfix" id="portfolioButton">
+						<img src="portfolio/images/hjemmeside.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+					</div>
 				</div>
-			</div>-->
-		</div>
-		<div class="clearfix">..</div>
-		<div class="footer">
-			<div class="sponsors">
-				<a href="https://www.youtube.com/channel/UCKV0EX_hYvj7S26R-RkPKVQ" class="icon-social-youtube youtube"></a>
-				<a href="https://www.facebook.com/DKMotovlogger/" class="icon-social-facebook facebook"></a>
-				<a href="https://twitter.com/DKMotoVlogger" class="icon-social-twitter twitter"></a>
-				<a href="https://www.instagram.com/anderzenn/" class="icon-social-instagram instagram"></a>
 			</div>
-			<div class="aFooter">
-				Copyright &copy; 2017 Mads Andersen. &#8197; &#8197; &mdash; &#8197; &#8197; <a href="http://www.github.io" class="icon-social-github github"> <span class="github-pow">Powered by GitHub.io</span></a>
+			<div id="newsfeed" class="clearfix">
+				<h2>News Feed</h2>
+				
+				<div class="feedContent">
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article1.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum metus nec urna molestie lacinia. Phasellus auctor ut quam nec pharetra. Sed metus quam, vehicula sit amet aliquam at, iaculis vitae turpis. Praesent malesuada tortor in rhoncus pellentesque.
+						</p>
+					</div>
+				
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article4.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula velit eget nisl iaculis, vel ullamcorper dui placerat. Quisque orci elit, accumsan nec felis a, molestie aliquam massa. Duis elementum feugiat sem quis pulvinar. Proin magna ante, tempus.
+						</p>
+					</div>
+				
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article3.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor est orci, tristique tempus mauris consequat nec. Etiam tincidunt lectus pharetra luctus condimentum. Donec accumsan quam in ultricies semper. Vestibulum in molestie risus. Suspendisse potenti.
+						</p>
+					</div>
+				
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article4.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et mauris ultrices, gravida nisl a, ornare enim. Praesent accumsan tristique orci, ut faucibus elit cursus ac. Nullam commodo enim quis augue vestibulum tincidunt. Aenean aliquam malesuada condimentum. Pellentesque.
+						</p>
+					</div>
+				
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article1.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero dolor, accumsan sit amet purus a, pharetra commodo ex. Duis eu quam tortor. Mauris in purus mattis, facilisis nibh sed, posuere dolor. Fusce ac lacus sit amet arcu.
+						</p>
+					</div>
+				
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article3.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at lacinia magna. Donec pretium justo ut laoreet euismod. Praesent pharetra, dui at viverra eleifend, mi nibh porttitor neque, vitae luctus felis sem vel enim. Maecenas vel ipsum at.
+						</p>
+					</div>
+				
+					<div class="newsArticle clearfix">
+						<img src="img/articles/article2.jpg">
+						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="date">14/02/2018</p>
+						<p class="articleText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac sodales elit. Sed eget urna nec mauris feugiat porttitor. Aliquam finibus velit ac dictum tincidunt. Phasellus tincidunt sagittis ipsum ut egestas. Nunc eget dapibus nisi. Sed eu nisi.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="instafeed" class="clearfix">
+				<h2>Instagram &bull; @Anderzenn</h2>
+				
+				<div id="instafeed-gallery-feed" class="gallery">
+				</div>
+				<button id="load" class="btn">Load More</button>
+			</div>
+			<div id="footer">
+				<p>
+					Copyright 2018 &copy; Mads Andersen. 
+					<br><a href="http://www.instagram.com/Anderzenn" target="_blank" class="instagram"><i class="socialIcon ion-social-instagram-outline"></i></a>
+					<a href="http://www.twitter.com/DKMotovlogger" target="_blank" class="twitter"><i class="socialIcon ion-social-twitter"></i></a>
+					<a href="https://www.facebook.com/DKMotovlogger/" target="_blank" class="facebook"><i class="socialIcon ion-social-facebook"></i></a>
+					<a href="https://www.youtube.com/channel/UCKV0EX_hYvj7S26R-RkPKVQ?view_as=subscriber" target="_blank" class="youtube"><i class="socialIcon ion-social-youtube"></i></a>
+				
+				</p>
 			</div>
 		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript" src="slick/slickfirstrun.js"></script>
+		<script type="text/javascript" src="js/instafeed.min.js"></script>
+		<script type="text/javascript" src="js/instafeedsettings.js"></script>
+		<script type="text/javascript" src="js/scrolltotop.js"></script>
+		<script type="text/javascript" src="js/modal.js"></script>
 	</body>
 </html>
