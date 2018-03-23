@@ -1,0 +1,85 @@
+#contact {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 700px;
+	margin-bottom: 40px;
+}
+
+#contact h2 {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	font-size: 26px;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	color: #4A4A4A;
+}
+
+#contact i {
+	display: block;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: #aaa;
+	font-size: 12px;
+	margin-top: -8px;
+	margin-bottom: 20px;
+}
+
+#contact b {
+	text-decoration: underline;
+	color: #444;
+}
+
+form {
+}
+
+label {
+	margin: 0 auto;
+	display: block;
+	width: 30%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	display: block;
+    width: 30%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin: 0 auto;
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	color: #fff;
+	background: #AB2222;
+	font-size: 16px;
+	margin: 20px auto;
+	padding: 10px 27px;
+	display: block;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 0 #911c1c;
+	transition: box-shadow 0.2s;
+	width: 30%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	transition: box-shadow 0.2s;
+	cursor: pointer;
+	box-shadow: 2px 2px 0px 0px #911C1C;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

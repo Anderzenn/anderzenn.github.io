@@ -2,11 +2,13 @@
 	Created by Mads Rosengren Andersen.
 
 	####      CURRENT ISSUES     ####
-	If text in articles gets too long it causes issues with alignment.
-		- Possible fix: limit amount of words articles can show.
 		
 	####       THINGS TODO       ####
 	Add actual content
+	Add php functionality
+	Add better portfolio functionality.
+	 - support for 3D models.
+	Add support for phones, tablets and smaller screens.
 	
 -->
 
@@ -20,6 +22,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/newsArticles.css">
 		<link rel="stylesheet" type="text/css" href="css/portfolioArticles.css">
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
 		<link rel="stylesheet" type="text/css" href="css/modal.css">
 		<link rel="stylesheet" type="text/css" href="css/slideshowStyle.css">
 		<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
@@ -35,7 +38,7 @@
 		</div>
 		
 		<!-- The Modal -->
-		<div id="myModal" class="modal">
+		<div id="modalOne" class="modal">
 
 			<!-- Modal content -->
 			<div class="modal-content clearfix">
@@ -43,53 +46,117 @@
 				<img src="portfolio/images/hjemmeside.jpg">
 			</div>
 		</div>
-		<div id="content">
-			<div id="top" class="header">
-				<h1><a href="" style="color: #fff;">Mads <img class="titleIcon" src="img/ANDZ.svg"/> Andersen</a></h1>
-				<ul class="nav">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#newsfeed">News Feed</a></li>
-					<li><a href="#instafeed">Instagram</a></li>
-				</ul>
+		
+		<div id="modalTwo" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content clearfix">
+				<span class="close ion-close-round"></span>
+				<img src="portfolio/images/valhalla-symbol-orange.png">
 			</div>
-			<div id="home" class="someContent">
+		</div>
+		
+		<div id="modalThree" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content clearfix">
+				<span class="close ion-close-round"></span>
+				<div class="sketchfab-embed-wrapper">
+					<iframe width="100%" height="100%" src="https://sketchfab.com/models/d8b4f55d56334276b99e7e635a3779d7/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> 
+				</div>
+			</div>
+		</div>
+		
+		<div id="modalFour" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content clearfix">
+				<span class="close ion-close-round"></span>
+				<img src="portfolio/images/andzcover2.png">
+			</div>
+		</div>
+		
+		<div id="modalFive" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content clearfix">
+				<span class="close ion-close-round"></span>
+				<img src="portfolio/images/youtubebanner.png">
+			</div>
+		</div>
+		
+		
+		<div id="top" class="header">
+			<h1><a href="" style="color: #fff;">Mads <img class="titleIcon" src="img/ANDZ.svg"/> Andersen</a></h1>
+			<ul class="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<!--<li><a href="#newsfeed">News Feed</a></li>-->
+				<li><a href="#instafeed">Instagram</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="home" class="someContent contentBackground">
 				<div class="mySlides">
 					<div class="slides">
 						<div>
 							<img src="img/carousel/img1.jpg" style="width: 100%;">
 							<div class="captionStyleOne">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nulla porttitor, luctus nulla id, porttitor leo.</div>
-							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 1</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Andreas Rønningen on <a href="https://unsplash.com/photos/w3lQVmuK8fw">Unsplash</a>.</div>
 						</div>
 						<div>
 							<img src="img/carousel/img2.jpg" style="width: 100%;">
 							<div class="captionStyleTwo">In tincidunt eget urna a mollis.</div>
-							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 2</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Paul Morris on <a href="https://unsplash.com/photos/PaNxe-QJwhE">Unsplash</a>.</div>
 						</div>
 						<div>
 							<img src="img/carousel/img3.jpg" style="width: 100%;">
 							<div class="captionStyleFour">Aliquam ultrices metus ac leo pharetra finibus.</div>
-							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 3</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Alexander Dimitrov on <a href="https://unsplash.com/photos/KGy1GFeKBu4">Unsplash</a>.</div>
 						</div>
 						<div>
 							<img src="img/carousel/img4.jpg" style="width: 100%;">
 							<div class="captionStyleTree">Nunc lobortis lorem purus, in maximus magna sagittis dictum. Curabitur sit amet lacus ultricies, tempor elit vitae, imperdiet augue.</div>
-							<div class="imgCreditText"><i class="ion-ios-camera"></i> Photo credit with <a href="">link</a> 4</div>
+							<div class="imgCreditText"><i class="ion-ios-camera"></i> Serge Kutuzov on <a href="https://unsplash.com/photos/1K9-TbJWs2U">Unsplash</a>.</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="portfolio" class="clearfix">
+			<div id="portfolio" class="clearfix contentBackground">
 				<h2>Portfolio</h2>
 				
 				<div class="feedContent">
-					<div class="portfolioArticle clearfix" id="portfolioButton">
+					<div class="portfolioArticle clearfix" data-modal="modalOne">
 						<img src="portfolio/images/hjemmeside.jpg">
-						<p class="articleTitle">Lorem Ipsum</p>
+						<p class="articleTitle">Website</p>
+					</div>
+					
+					<div class="portfolioArticle clearfix" data-modal="modalTwo">
+						<img src="portfolio/images/valhalla-symbol-orange.png">
+						<p class="articleTitle">Desktop Wallpaper</p>
+					</div>
+					
+					<div class="portfolioArticle clearfix" data-modal="modalThree">
+						<img src="portfolio/images/robot.jpg">
+						<p class="articleTitle">Robot</p>
+					</div>
+					
+					<div class="portfolioArticle clearfix" data-modal="modalFour">
+						<img src="portfolio/images/andzcover2.png">
+						<p class="articleTitle">ANDZ 2.0</p>
+					</div>
+					
+					<div class="portfolioArticle clearfix" data-modal="modalFive">
+						<img src="portfolio/images/youtubebanner.png">
+						<p class="articleTitle">YouTube Banner</p>
 					</div>
 				</div>
 			</div>
-			<div id="newsfeed" class="clearfix">
+			<!--   ##NEWS FEED##
+				Currently  Disabled
+				
+			<div id="newsfeed" class="clearfix contentBackground">
 				<h2>News Feed</h2>
 				
 				<div class="feedContent">
@@ -125,7 +192,7 @@
 						<p class="articleTitle">Lorem Ipsum</p>
 						<p class="date">14/02/2018</p>
 						<p class="articleText">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et mauris ultrices, gravida nisl a, ornare enim. Praesent accumsan tristique orci, ut faucibus elit cursus ac. Nullam commodo enim quis augue vestibulum tincidunt. Aenean aliquam malesuada condimentum. Pellentesque.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et mauris ultrices, gravida nisl a, ornare enim. Praesent accumsan tristique orci, ut faucibus elit cursus ac. Nullam commodo enim quis augue vestibulum tincidunt. Aenean aliquam malesuada condimentum. Pellentesque. Lorem Ipsum dolor sit amet cookies in crumbles.
 						</p>
 					</div>
 				
@@ -156,32 +223,98 @@
 						</p>
 					</div>
 				</div>
-			</div>
-			<div id="instafeed" class="clearfix">
+			</div> -->
+			<div id="instafeed" class="clearfix contentBackground">
 				<h2>Instagram &bull; @Anderzenn</h2>
 				
 				<div id="instafeed-gallery-feed" class="gallery">
 				</div>
 				<button id="load" class="btn">Load More</button>
 			</div>
-			<div id="footer">
-				<p>
-					Copyright 2018 &copy; Mads Andersen. 
-					<br><a href="http://www.instagram.com/Anderzenn" target="_blank" class="instagram"><i class="socialIcon ion-social-instagram-outline"></i></a>
-					<a href="http://www.twitter.com/DKMotovlogger" target="_blank" class="twitter"><i class="socialIcon ion-social-twitter"></i></a>
-					<a href="https://www.facebook.com/DKMotovlogger/" target="_blank" class="facebook"><i class="socialIcon ion-social-facebook"></i></a>
-					<a href="https://www.youtube.com/channel/UCKV0EX_hYvj7S26R-RkPKVQ?view_as=subscriber" target="_blank" class="youtube"><i class="socialIcon ion-social-youtube"></i></a>
+			
+			<div id="contact" class="clearfix contentBackground">
+				<h2>Contact Me</h2>
+				<i>Please note that this is currently <b>not</b> functional.</i>
 				
-				</p>
+				<div class="feedContent">
+					<form action="">
+					
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your First Name.">
+
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your Last Name.">
+
+						<label for="email">E-Mail Address</label>
+						<input type="text" id="email" name="email" placeholder="Your E-Mail Address.">
+
+						<label for="subject">Subject</label>
+						<input type="text" id="subject" name="subject" placeholder="What are you writing to me about?">
+					
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="What's your message?" style="height:200px"></textarea>
+
+						<input type="submit" value="Send">
+
+					</form>
+				</div>
 			</div>
+		</div>
+		<div id="footer">
+			<p>
+				Copyright 2018 &copy; Mads Andersen. 
+				<br><a href="http://www.instagram.com/Anderzenn" target="_blank" class="instagram"><i class="socialIcon ion-social-instagram-outline"></i></a>
+				<a href="http://www.twitter.com/DKMotovlogger" target="_blank" class="twitter"><i class="socialIcon ion-social-twitter"></i></a>
+				<a href="https://www.facebook.com/DKMotovlogger/" target="_blank" class="facebook"><i class="socialIcon ion-social-facebook"></i></a>
+				<a href="https://www.youtube.com/channel/UCKV0EX_hYvj7S26R-RkPKVQ?view_as=subscriber" target="_blank" class="youtube"><i class="socialIcon ion-social-youtube"></i></a>
+			
+			</p>
 		</div>
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dotdotdot.js"></script>
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script type="text/javascript" src="slick/slickfirstrun.js"></script>
 		<script type="text/javascript" src="js/instafeed.min.js"></script>
 		<script type="text/javascript" src="js/instafeedsettings.js"></script>
 		<script type="text/javascript" src="js/scrolltotop.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script>
 		<script type="text/javascript" src="js/modal.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function( $ ) {
+
+				$(".articleText").dotdotdot({
+					callback: function( isTruncated ) {},
+					/* Function invoked after truncating the text.
+					Inside this function, "this" refers to the wrapper. */
+
+					ellipsis: "\u2026 ",
+					/* The text to add as ellipsis. */
+
+					height: null,
+					/* The (max-)height for the wrapper:
+					null: measure the CSS (max-)height ones;
+					a number: sets a specific height in pixels;
+					"watch": re-measures the CSS (max-)height in the "watch". */
+
+					keep: null,
+					/* jQuery-selector for elements to keep after the ellipsis. */
+
+					tolerance: 30,
+					/* Deviation for the measured wrapper height. */
+
+					truncate: "word",
+					/* How to truncate the text: By "node", "word" or "letter". */
+					
+					watch: "true",
+					/* Wheter to update the ellipsis:
+					true: monitors the wrapper width and height;
+					"window": Monitors the windows width and height. */
+
+				});
+
+			});
+		</script>
 	</body>
 </html>

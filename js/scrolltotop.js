@@ -6,8 +6,4 @@ jQuery(document).ready(function($){
 			$('#bcktt').fadeOut('slow');
 		}
 	});
-	$('#bcktt').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 500);
-		return false;
-	});
 });

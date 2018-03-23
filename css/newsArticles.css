@@ -2,7 +2,6 @@
 	width: 100%;
 	margin: 0 auto;
 	min-height: 800px;
-	background: #E8E8E8;
 	margin-bottom: 40px;
 }
 
@@ -35,8 +34,10 @@
 }
 
 .newsArticle .articleText {
-	word-wrap: break-word;
+	word-wrap: keep-all;
 	padding: 5px;
+	text-overflow: ellipsis;
+	
 }
 
 .newsArticle .articleTitle, .newsArticle .date {

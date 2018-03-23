@@ -2,7 +2,6 @@
 	width: 100%;
 	margin: 0 auto;
 	min-height: 800px;
-	background: #fff;
 	margin-bottom: 40px;
 }
 
@@ -30,6 +29,7 @@
 
 .portfolioArticle:hover {
 	cursor: pointer;
+	color: #AB2222;
 }
 
 .portfolioArticle img {

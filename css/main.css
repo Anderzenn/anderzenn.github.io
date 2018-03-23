@@ -96,6 +96,10 @@ a:hover {
 	color: #AB2222;
 }
 
+#content .contentBackground:nth-child(odd) {
+	background: #E8E8E8;
+}
+
 .someContent {
 	min-height: 800px;
 }
@@ -121,6 +125,7 @@ a:hover {
 	font-size: 26px;
 	padding-top: 20px; 
 	padding-bottom: 20px;
+	color: #4A4A4A;
 }
 
 #instafeed a {
@@ -171,7 +176,7 @@ a:hover {
 }
 
 .img-main-container {
-	background: #E8E8E8;
+	background: #fff;
 	margin: 0 auto;
 	border-radius: 10px;
 	display: inline-block;
@@ -269,7 +274,7 @@ a:hover {
 
 #footer {
 	background: #333333;
-	color: #fff;
+	color: #fff!important;
 	text-align: center;
 	text-transform: uppercase;
 	vertical-align: middle;

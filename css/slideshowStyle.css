@@ -226,7 +226,7 @@
 
 .captionStyleOne {
   color: #f2f2f2;
-  font-size: 53px;
+  font-size: 250%;
   padding: 8px 12px;
   position: absolute;
   top: 5%;
@@ -238,7 +238,7 @@
 
 .captionStyleTwo {
   color: #f2f2f2;
-  font-size: 53px;
+  font-size: 250%;
   padding: 8px 12px;
   position: absolute;
   bottom: 5%;
@@ -250,7 +250,7 @@
 
 .captionStyleTree {
   color: #f2f2f2;
-  font-size: 53px;
+  font-size: 250%;
   padding: 8px 12px;
   position: absolute;
   top: 5%;
@@ -262,7 +262,7 @@
 
 .captionStyleFour {
   color: #f2f2f2;
-  font-size: 53px;
+  font-size: 250%;
   padding: 8px 12px;
   position: absolute;
   bottom: 5%;
