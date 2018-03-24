@@ -2,13 +2,16 @@
 	Created by Mads Rosengren Andersen.
 
 	####      CURRENT ISSUES     ####
+	Phone scaling will sometimes cause the instagram feed and portfolio to display in a line.
 		
 	####       THINGS TODO       ####
-	Add actual content
+	Add more content
 	Add php functionality
 	Add better portfolio functionality.
-	 - support for 3D models.
-	Add support for phones, tablets and smaller screens.
+	 - support for videos.
+	 - support for games.
+	 - support for websites.
+	Add better support for phones, tablets and smaller screens.
 	
 -->
 
@@ -16,7 +19,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
 		<title>Mads Andersen</title>
 		<link href="img/ANDZ.ico" rel="shortcut icon" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -97,7 +102,7 @@
 			</ul>
 		</div>
 		<div id="content">
-			<div id="home" class="someContent contentBackground">
+			<div id="home" class="contentBackground">
 				<div class="mySlides">
 					<div class="slides">
 						<div>

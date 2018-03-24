@@ -291,98 +291,175 @@
 	text-decoration: none;
 }
 
-/* Old Style */
-/*
 
+/* iPad Pro Portrait */
+@media screen and (max-width: 1024px) {
+    .mySlides {
+		max-height: 1000px;
+	}
 
+	.slick-slide img {
+		height: 1000px!important;
+	}
+	
+	.captionStyleOne {
+		font-size: 120%;
+		padding: 8px 12px;
+		top: 2%;
+		right: 5%;
+		width: 40%;
+	}
 
-.slideshow-container {
-  width: 100%;
-  height: 800px;
-  position: relative;
-  margin: auto;
+	.captionStyleTwo {
+		font-size: 120%;
+		padding: 8px 12px;
+		bottom: 2%;
+		left: 5%;
+		width: 30%;
+	}
+
+	.captionStyleTree {
+		font-size: 120%;
+		padding: 8px 12px;
+		top: 2%;
+		left: 5%;
+		width: 30%;
+	}
+
+	.captionStyleFour {
+		font-size: 120%;
+		padding: 8px 12px;
+		bottom: 2%;
+		right: 5%;
+		width: 30%;
+	}
+
+	.imgCreditText {
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		padding: 8px 12px;
+	}
 }
 
+/* iPhone 6/7/8 Plus Portrait */
+@media screen and (max-width: 768px) {
+    .mySlides {
+		max-height: 800px;
+	}
 
+	.slick-slide img {
+		height: 800px!important;
+	}
+	
+	.captionStyleOne {
+		font-size: 100%;
+		padding: 8px 12px;
+		top: 2%;
+		right: 5%;
+		width: 40%;
+	}
 
+	.captionStyleTwo {
+		font-size: 100%;
+		padding: 8px 12px;
+		bottom: 2%;
+		left: 5%;
+		width: 30%;
+	}
 
+	.captionStyleTree {
+		font-size: 100%;
+		padding: 8px 12px;
+		top: 2%;
+		left: 5%;
+		width: 30%;
+	}
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+	.captionStyleFour {
+		font-size: 100%;
+		padding: 8px 12px;
+		bottom: 2%;
+		right: 5%;
+		width: 30%;
+	}
+
+	.imgCreditText {
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		padding: 8px 12px;
+	}
 }
 
+/* iPhone 6/7/8 Plus Portrait */
+@media screen and (max-width: 414px) {
+    .mySlides {
+		max-height: 600px;
+	}
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+	.slick-slide img {
+		height: 600px!important;
+	}
+	
+	.captionStyleOne {
+		font-size: 70%;
+		padding: 8px 12px;
+		top: 2%;
+		right: 5%;
+		width: 40%;
+	}
+
+	.captionStyleTwo {
+		font-size: 70%;
+		padding: 8px 12px;
+		bottom: 2%;
+		left: 5%;
+		width: 30%;
+	}
+
+	.captionStyleTree {
+		font-size: 70%;
+		padding: 8px 12px;
+		top: 2%;
+		left: 5%;
+		width: 30%;
+	}
+
+	.captionStyleFour {
+		font-size: 70%;
+		padding: 8px 12px;
+		bottom: 2%;
+		right: 5%;
+		width: 30%;
+	}
+
+	.imgCreditText {
+		font-size: 9px;
+		height: 20px;
+		line-height: 20px;
+		padding: 8px 12px;
+	}
 }
 
+/* iPhone 6/7/8 Portrait */
+@media screen and (max-width: 375px) {
+    .mySlides {
+		max-height: 500px;
+	}
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+	.slick-slide img {
+		height: 500px!important;
+	}
 }
 
+/* iPhone 5/SE Portrait */
+@media screen and (max-width: 320px) {
+    .mySlides {
+		max-height: 400px;
+	}
 
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 2%;
+	.slick-slide img {
+		height: 400px!important;
+	}
 }
-
-
-
-.slideDots {
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	bottom: 0;
-}
-
-
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/

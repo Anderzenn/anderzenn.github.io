@@ -63,3 +63,121 @@
 .portfolioArticle .date {
 	font-size: 13px;
 }
+
+/* 1920 */
+@media screen and (max-width: 1920px) {
+	#portfolio {
+		min-height: 700px;
+	}
+	
+    .portfolioArticle {
+		height: 280px;
+		width: 19%;
+		margin: 5px;
+	}
+	
+	.portfolioArticle img {
+		height: 240px;
+	}
+	
+	.portfolioArticle .articleTitle, .portfolioArticle .date {
+		font-size: 18px;
+	}
+}
+
+/* iPad Pro Portrait */
+@media screen and (max-width: 1024px) {
+	#portfolio {
+		min-height: 300px;
+	}
+	
+    .portfolioArticle {
+		height: 280px;
+		width: 48.6%;
+		margin: 5px;
+	}
+	
+	.portfolioArticle img {
+		height: 240px;
+	}
+	
+	.portfolioArticle .articleTitle, .portfolioArticle .date {
+		font-size: 18px;
+	}
+}
+
+/* iPhone 6/7/8 Plus Portrait */
+@media screen and (max-width: 768px) {
+	#portfolio {
+		min-height: 300px;
+	}
+	
+    .portfolioArticle {
+		height: 190px;
+		width: 48.2%;
+		margin: 5px;
+	}
+	
+	.portfolioArticle img {
+		height: 155px;
+	}
+	
+	.portfolioArticle .articleTitle, .portfolioArticle .date {
+		font-size: 15px;
+	}
+}
+
+/* iPhone 6/7/8 Plus Portrait */
+@media screen and (max-width: 414px) {
+	#portfolio {
+		min-height: 300px;
+	}
+	
+    .portfolioArticle {
+		height: 120px;
+		width: 46.6%;
+		margin: 5px;
+	}
+	
+	.portfolioArticle img {
+		height: 95px;
+	}
+	
+	.portfolioArticle .articleTitle, .portfolioArticle .date {
+		font-size: 10px;
+	}
+}
+
+/* iPhone 6/7/8 Portrait */
+@media screen and (max-width: 375px) {
+	
+    .portfolioArticle {
+		height: 120px;
+		width: 46%;
+	}
+	
+	.portfolioArticle img {
+		height: 95px;
+	}
+	
+	.portfolioArticle .articleTitle, .portfolioArticle .date {
+		font-size: 10px;
+	}
+}
+
+/* iPhone 5/SE Portrait */
+@media screen and (max-width: 320px) {
+	
+    .portfolioArticle {
+		height: 100px;
+		width: 45.7%;
+	}
+	
+	.portfolioArticle img {
+		height: 75px;
+	}
+	
+	.portfolioArticle .articleTitle, .portfolioArticle .date {
+		font-size: 10px;
+	}
+}

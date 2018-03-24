@@ -83,3 +83,24 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+
+
+/* iPhone 5/SE Portrait */
+@media screen and (max-width: 1060px) {
+    
+	label {
+		width: 95%;
+	}
+
+	/* Style inputs with type="text", select elements and textareas */
+	input[type=text], select, textarea {
+		width: 95%; /* Full width */
+	}
+
+	/* Style the submit button with a specific background color etc */
+	input[type=submit] {
+		width: 95%;
+	}
+	
+}

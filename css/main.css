@@ -8,6 +8,12 @@
 	box-sizing:border-box;
 }
 
+html, body {
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -306,4 +312,247 @@ a:hover {
 
 .youtube:hover {
 	color: #cc181e!important;
+}
+
+
+
+/* 1920 */
+@media screen and (max-width: 1920px) {
+    .header {
+		height: 8em;
+	}
+
+	.header h1 {
+		padding-top: 10px;
+		font-size: 40px;
+	}
+
+	.titleIcon {
+		height: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.nav {
+		font-size: 13px;
+	}
+	.ion-ios-camera {
+		font-size: 14px;
+	}
+	
+	.img-featured-container {
+		width: 189px;
+		height: 189px;
+	}
+
+	.img-featured-container .instagram_img {
+		width: 189px;
+		height: 189px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 189px;
+		height: 189px;
+	}
+}
+
+/* iPad Pro Portrait */
+@media screen and (max-width: 1024px) {
+    .header {
+		height: 8em;
+	}
+
+	.header h1 {
+		padding-top: 10px;
+		font-size: 40px;
+	}
+
+	.titleIcon {
+		height: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.nav {
+		font-size: 13px;
+	}
+	.ion-ios-camera {
+		font-size: 12px;
+	}
+	
+	.img-featured-container {
+		width: 205px;
+		height: 205px;
+	}
+
+	.img-featured-container .instagram_img {
+		width: 205px;
+		height: 205px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 205px;
+		height: 205px;
+	}
+}
+
+/* iPad Portrait */
+@media screen and (max-width: 768px) {
+    .header {
+		height: 8em;
+	}
+
+	.header h1 {
+		padding-top: 10px;
+		font-size: 40px;
+	}
+
+	.titleIcon {
+		height: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.nav {
+		font-size: 13px;
+	}
+	.ion-ios-camera {
+		font-size: 12px;
+	}
+	
+	.img-featured-container {
+		width: 205px;
+		height: 205px;
+	}
+
+	.img-featured-container .instagram_img {
+		width: 205px;
+		height: 205px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 205px;
+		height: 205px;
+	}
+}
+
+
+/* iPhone 6/7/8 Plus Portrait */
+@media screen and (max-width: 414px) {
+    .header {
+		height: 6.5em;
+	}
+
+	.header h1 {
+		padding-top: 10px;
+		font-size: 30px;
+	}
+
+	.titleIcon {
+		height: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.nav {
+		font-size: 13px;
+	}
+	.ion-ios-camera {
+		font-size: 12px;
+	}
+	
+	.img-featured-container {
+		width: 160px;
+		height: 160px;
+	}
+
+	.img-featured-container .instagram_img {
+		width: 160px;
+		height: 160px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 160px;
+		height: 160px;
+	}
+}
+
+/* iPhone 6/7/8 Portrait */
+@media screen and (max-width: 375px) {
+    .header {
+		height: 6.5em;
+	}
+
+	.header h1 {
+		padding-top: 10px;
+		font-size: 30px;
+	}
+
+	.titleIcon {
+		height: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.nav {
+		font-size: 13px;
+	}
+	.ion-ios-camera {
+		font-size: 12px;
+	}
+	
+	.img-featured-container {
+		width: 138px;
+		height: 138px;
+	}
+
+	.img-featured-container .instagram_img {
+		width: 138px;
+		height: 138px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 138px;
+		height: 138px;
+	}
+}
+
+/* iPhone 5/SE Portrait */
+@media screen and (max-width: 320px) {
+    .header {
+		height: 5em;
+	}
+
+	.header h1 {
+		padding-top: 10px;
+		font-size: 20px;
+	}
+
+	.titleIcon {
+		height: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.nav {
+		font-size: 10px;
+	}
+	.ion-ios-camera {
+		font-size: 12px;
+	}
+	
+	.img-featured-container {
+		width: 120px;
+		height: 120px;
+	}
+
+	.img-featured-container .instagram_img {
+		width: 120px;
+		height: 120px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 120px;
+		height: 120px;
+	}
 }
