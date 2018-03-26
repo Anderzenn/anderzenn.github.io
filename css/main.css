@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Satisfy|Cutive+Mono');
 
 * {
 	margin: 0;
@@ -9,9 +9,9 @@
 }
 
 html, body {
-width: 100%;
-margin: 0px;
-padding: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 a {
@@ -313,6 +313,47 @@ a:hover {
 .youtube:hover {
 	color: #cc181e!important;
 }
+
+.error {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+	color: #c5c5c5;
+}
+
+.error hr {
+	border: 0;
+	width: 30%;
+	color: #c5c5c5;
+	background-color: #c5c5c5;
+	height: 4px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.error h1 {
+	font-family: 'Cutive Mono', monospace;
+}
+
+.error h3 {
+	font-family: 'Cutive Mono', monospace;
+}
+
+.errTwit {
+	color: #11a3ff;
+	font-family: 'Cutive Mono', monospace;
+}
+
+.andzInv {
+	width: 350px;
+}
+
+
 
 
 
