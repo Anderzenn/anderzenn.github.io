@@ -281,7 +281,6 @@ a:hover {
 #footer {
 	background: #333333;
 	color: #fff!important;
-	text-align: center;
 	text-transform: uppercase;
 	vertical-align: middle;
 	display:flex;
@@ -290,11 +289,12 @@ a:hover {
 }
 
 #footer p {
+	text-align: center;
 }
 
 #footer a {
 	font-size: 32px;
-	margin: 0 16px;
+	margin: 0 13px;
 	color: #fff;
 }
 
@@ -312,6 +312,13 @@ a:hover {
 
 .youtube:hover {
 	color: #cc181e!important;
+}
+
+.github:hover {
+	color: #6737AD!important;
+}
+
+.socialIcon:first-child {
 }
 
 .error {
@@ -355,7 +362,27 @@ a:hover {
 
 
 
+/* 3440 */
+@media screen and (max-width: 3440px) {
+	.ion-ios-camera {
+		font-size: 14px;
+	}
+	
+	.img-featured-container {
+		width: 280px;
+		height: 280px;
+	}
 
+	.img-featured-container .instagram_img {
+		width: 280px;
+		height: 280px;
+	}
+
+	.img-featured-container .img-backdrop {
+		width: 280px;
+		height: 280px;
+	}
+}
 
 /* 1920 */
 @media screen and (max-width: 1920px) {

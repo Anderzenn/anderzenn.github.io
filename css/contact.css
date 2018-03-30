@@ -55,6 +55,10 @@ input[type=text], select, textarea {
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+input[type=text]::placeholder, textarea::placeholder {
+	color: #D6D6D6;
+}
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
 	color: #fff;
@@ -77,6 +81,11 @@ input[type=submit]:hover {
 	box-shadow: 2px 2px 0px 0px #911C1C;
 }
 
+#message {
+	height: 200px;
+	min-height: 200px;
+}
+
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
@@ -84,7 +93,14 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+.disabled {
+	background: #595959!important;
+}
 
+.disabled:hover {
+	box-shadow: 0px 0px 0px 0px!important;
+	cursor: not-allowed!important;
+}
 
 /* iPhone 5/SE Portrait */
 @media screen and (max-width: 1060px) {

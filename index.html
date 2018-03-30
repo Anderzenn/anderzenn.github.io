@@ -245,21 +245,21 @@
 					<form action="">
 					
 						<label for="fname">First Name</label>
-						<input type="text" id="fname" name="firstname" placeholder="Your First Name.">
+						<input type="text" id="fname" name="firstname" placeholder="Your First Name." disabled="disabled" >
 
 						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname" placeholder="Your Last Name.">
+						<input type="text" id="lname" name="lastname" placeholder="Your Last Name." disabled="disabled" >
 
 						<label for="email">E-Mail Address</label>
-						<input type="text" id="email" name="email" placeholder="Your E-Mail Address.">
+						<input type="text" id="email" name="email" placeholder="Your E-Mail Address." disabled="disabled" >
 
 						<label for="subject">Subject</label>
-						<input type="text" id="subject" name="subject" placeholder="What are you writing to me about?">
+						<input type="text" id="subject" name="subject" placeholder="What are you writing to me about?" disabled="disabled" >
 					
 						<label for="message">Message</label>
-						<textarea id="message" name="message" placeholder="What's your message?" style="height:200px"></textarea>
+						<textarea id="message" name="message" placeholder="What's your message?"  disabled="disabled" ></textarea>
 
-						<input type="submit" value="Send">
+						<input class="disabled" type="submit" disabled="disabled" value="Send">
 
 					</form>
 				</div>
@@ -267,12 +267,12 @@
 		</div>
 		<div id="footer">
 			<p>
-				Copyright 2018 &copy; Mads Andersen. 
-				<br><a href="http://www.instagram.com/Anderzenn" target="_blank" class="instagram"><i class="socialIcon ion-social-instagram-outline"></i></a>
-				<a href="http://www.twitter.com/DKMotovlogger" target="_blank" class="twitter"><i class="socialIcon ion-social-twitter"></i></a>
+				Copyright 2018 &copy; Mads Andersen<br>
+				<a href="https://www.instagram.com/Anderzenn" target="_blank" class="instagram"><i class="socialIcon ion-social-instagram-outline"></i></a>
+				<a href="https://www.twitter.com/DKMotovlogger" target="_blank" class="twitter"><i class="socialIcon ion-social-twitter"></i></a>
 				<a href="https://www.facebook.com/DKMotovlogger/" target="_blank" class="facebook"><i class="socialIcon ion-social-facebook"></i></a>
 				<a href="https://www.youtube.com/channel/UCKV0EX_hYvj7S26R-RkPKVQ?view_as=subscriber" target="_blank" class="youtube"><i class="socialIcon ion-social-youtube"></i></a>
-			
+				<a href="https://github.com/Anderzenn" target="_blank" class="github"><i class="socialIcon ion-social-github"></i></a>
 			</p>
 		</div>
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -286,6 +286,7 @@
 		<script type="text/javascript" src="js/smoothscroll.js"></script>
 		<script type="text/javascript" src="js/modal.js"></script>
 		
+		<!-- jQuery dotdotdot function -->
 		<script type="text/javascript">
 			jQuery(document).ready(function( $ ) {
 
