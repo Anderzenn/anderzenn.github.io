@@ -74,6 +74,10 @@ input[type=submit] {
 	width: 30%;
 }
 
+input[type=text]:disabled, textarea:disabled {
+	background: #EDEDED;
+}
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
 	transition: box-shadow 0.2s;
