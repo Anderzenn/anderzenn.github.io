@@ -27,10 +27,23 @@ header {
 	border-bottom-left-radius: 10px;
 }
 
-header input {
+header h3 {
 	width: 100%;
 	height: 50px;
-	float: left;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: #444 2px 2px 2px;
+}
+
+header input {
+	width: 83%;
+	height: 50px;
+	float: right;
 	color: #fff;
 	font-size: 15px;
 	font-weight: 400;
@@ -102,10 +115,68 @@ header button svg .fill {
 	fill:#b92525;
 }
 
+header .backarrow {
+	position: absolute;
+	font-size: 20px;
+	padding: 13px 19px 13px 19px;
+	color: #b92525;
+	background: #fff;
+	border-radius: 5px;
+}
+
 .container {
 	width: 100%;
 	float: left;
 	padding: 15px;
+}
+
+.container .imgbtn {
+	width: 100%;
+	height: 270px;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 20px;
+	box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+.container .imgbtn img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+	border: none;
+}
+
+.container .imgbtn p {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+	text-shadow: #444 2px 2px 2px;
+}
+
+.container .imgbtn:hover .gradient {
+	background: linear-gradient(rgba(255, 255, 255, 0), #d63e3e);
+	opacity: 1;
+}
+
+.gradient {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border-radius: 5px;
+	background: linear-gradient(rgba(255, 255, 255, 0), #d63e3e);
+	opacity: 0.75;
+	-webkit-transition: opacity 0.2s ease;
+	-moz-transition: opacity 0.2s ease;
+	-ms-transition: opacity 0.2s ease;
+	-o-transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
 }
 
 ul.todo {
@@ -245,7 +316,16 @@ ul.todo#todo:empty:after {
 }
 
 ul.todo#completed:empty:after {
-	content: "You havn't completed any of items!";
+	content: "You havn't completed any of your items!";
+}
+
+ul.todo.food#todo:empty:after {
+	content: "You havn't added any foods yet!";
+	margin: 15px 0 0 0;
+}
+
+ul.todo.food#completed:empty:after {
+	content: "You havn't completed any of your foods yet!";
 }
 
 ul.todo#todo:after,
@@ -255,4 +335,28 @@ ul.todo#completed:after {
 	text-align: center;
 	font-size: 12px;
 	color: #aaa;
+}
+
+ul.todo.food#todo img{
+	display: block;
+	width: 100%;
+	height: 290px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: none;
+}
+
+ul.todo.food#completed img{
+	display: block;
+	width: 100%;
+	height: 290px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
