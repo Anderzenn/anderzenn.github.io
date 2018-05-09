@@ -42,7 +42,7 @@ label {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
 	display: block;
     width: 30%; /* Full width */
     padding: 12px; /* Some padding */  
@@ -55,7 +55,7 @@ input[type=text], select, textarea {
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-input[type=text]::placeholder, textarea::placeholder {
+input[type=text]::placeholder, input[type=email]::placeholder, textarea::placeholder {
 	color: #D6D6D6;
 }
 
