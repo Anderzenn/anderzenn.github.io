@@ -30,6 +30,7 @@
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
 		<link rel="stylesheet" type="text/css" href="css/modal.css">
 		<link rel="stylesheet" type="text/css" href="css/slideshowStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
 		<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="preload" as="image" href="img/carousel/img1.jpg">
@@ -101,6 +102,7 @@
 				<li><a href="#contact">Contact Me</a></li>
 			</ul>
 		</div>
+			
 		<div id="content">
 			<div id="home" class="contentBackground">
 				<div class="mySlides">
@@ -236,34 +238,55 @@
 				</div>
 				<button id="load" class="btn">Load More</button>
 			</div>
-			
 			<div id="contact" class="clearfix contentBackground">
 				<h2>Contact Me</h2>
 				<i>Please note that this is currently <b>not</b> functional.</i>
 				
 				<div class="feedContent">
-					<form action="">
+					<form action="https://formspree.io/thedanishmotovlogger@gmail.com" method="POST">
 					
 						<label for="fname">First Name</label>
-						<input type="text" id="fname" name="firstname" placeholder="Your First Name." disabled="disabled" >
+						<input type="text" id="fname" name="firstname" placeholder="Your First Name." >
 
 						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname" placeholder="Your Last Name." disabled="disabled" >
+						<input type="text" id="lname" name="lastname" placeholder="Your Last Name." >
 
 						<label for="email">E-Mail Address</label>
-						<input type="text" id="email" name="email" placeholder="Your E-Mail Address." disabled="disabled" >
+						<input type="text" id="email" name="_replyto" placeholder="Your E-Mail Address." >
 
 						<label for="subject">Subject</label>
-						<input type="text" id="subject" name="subject" placeholder="What are you writing to me about?" disabled="disabled" >
+						<input type="text" id="subject" name="_subject" placeholder="What are you writing to me about?" >
 					
 						<label for="message">Message</label>
-						<textarea id="message" name="message" placeholder="What's your message?"  disabled="disabled" ></textarea>
+						<textarea id="message" name="message" placeholder="What's your message?" ></textarea>
+						<input type="text" name="_gotcha" style="display:none" />
 
-						<input class="disabled" type="submit" disabled="disabled" value="Send">
+						<input class="" type="submit" value="Send">
 
 					</form>
 				</div>
 			</div>
+			
+			<!--<div id="aboutme" class="clearfix contentBackground">
+				<h2>About Me</h2>
+				
+				<div class="feedContent">
+					<div class="abtCard clearfix">
+						<h3>The Quickies</h3>
+						<img src="img/about/face.jpg">
+						<span><b>Name: </b>Mads Rosengren Andersen.</span>
+						<span><b>Age: </b>19.</span>
+						<span><b>Birthday: </b>August 9th.</span>
+						<span><b>Country: </b>Denmark.</span>
+						<span><b>Languages: </b>Danish & English.</span>
+						<span><b>Interests: </b>Games, Music, Movies, TV-Series, Motorcycles, Cars, Electronics.</span>
+						<span><b>Skills: </b>HTML & CSS, Photoshop, Cinema 4D.</span>
+					</div>
+					<div class="abtAdvncCard clearfix">
+						<p>more indepth information.</p>
+					</div>
+				</div>
+			</div>-->
 		</div>
 		<div id="footer">
 			<p>

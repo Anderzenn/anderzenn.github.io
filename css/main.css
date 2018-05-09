@@ -10,8 +10,6 @@
 
 html, body {
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
 }
 
 a {
@@ -43,6 +41,8 @@ a:hover {
 #bcktt a {
 	font-size: 22px;
 	color: #fff;
+	position: absolute;
+	display: block;
 }
 #bcktt a i {
 	position: absolute;
@@ -322,14 +322,19 @@ a:hover {
 }
 
 .error {
-	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.errorChild {
 	position: absolute;
 	top: 50%;
-	left: 0;
-	right: 0;
+	transform: translateY(-50%);
 	
-	margin: auto;
 	color: #c5c5c5;
+	text-align: center;
 }
 
 .error hr {
