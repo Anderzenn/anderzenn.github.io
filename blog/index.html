@@ -6,7 +6,7 @@ title: Anderzenn &bull; Blog
 
       {% for post in site.posts %}
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}
-            <img alt="{{ post.title }}" src="{{ page.image | prepend: relative_url }}" >
+            <img alt="{{ post.title }}" src="{{ post.image | prepend: relative_url }}" >
             <span>{{ post.date | date_to_string }}</span>
 
         </a>
