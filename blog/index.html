@@ -4,11 +4,12 @@ title: Anderzenn &bull; Blog
 ---
 	<div class="posts">
 
-      {% for post in site.posts %}
-        <a href="{{ post.url }}" title="{{ post.postName }}">
-            <img alt="{{ post.postName }}" src="{{ post.image | prepend: relative_url }}" >
-            <span>{{ post.postName }} &mdash; {{ post.date | date_to_string }}</span>
+        {% assign blog_posts = site.posts | sort: 'date' | reverse %}
+        {% for blog_posts in site.posts %}
+            <a href="{{ blog_posts.url }}" title="{{ blog_posts.postName }}">
+                <img alt="{{ blog_posts.postName }}" src="{{ blog_posts.image | prepend: relative_url }}" >
+                <span>{{ blog_posts.postName }} &mdash; {{ blog_posts.date | date: "%b %d, %Y" }}</span>
 
-        </a>
-	  {% endfor %}
+            </a>
+	    {% endfor %}
     </div>
