@@ -22,7 +22,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="HandheldFriendly" content="true">
-		<title>{{ page.title }}</title>
+		<title>{{ page.title }} {% if page.postName %} by {{ page.postName }} {% endif %}</title>
 		<link href={{ "/img/ANDZ.ico" | prepend: relative_url }} rel="shortcut icon" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href={{ "/css/main.css" | prepend: relative_url }}>
 		<link rel="stylesheet" type="text/css" href={{ "/css/newsArticles.css" | prepend: relative_url }}>

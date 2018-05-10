@@ -415,11 +415,16 @@ a:hover {
 	margin: 0 auto;
 }
 
-.note .single img {
+.note .blogImage {
 	height: 350px;
 	width: 100%;
 	display: block;
 	object-fit: cover;
+}
+
+.notecomments {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
