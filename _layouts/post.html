@@ -6,7 +6,7 @@ comments: true
 <div class="notes">
 		<div class="note single">
             <img class="blogImage" src="{{ page.image | prepend: relative_url }}" >
-            <h1 class="title">{{ page.title }} {{ page.postName }}</h1>
+            <h1 class="title">{{ page.postName }}</h1>
 			
 			<h2 class="date"><info datetime="{{ page.date }}">
 				{{ page.date | date: "%b %d, %Y" }} {% if page.author %} by {{ page.author }} {% endif %}
