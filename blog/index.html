@@ -8,14 +8,7 @@ title: Anderzenn &bull; Blog
         {% for blog_posts in site.posts %}
             <a href="{{ blog_posts.url }}" title="{{ blog_posts.postName }}">
                 <img alt="{{ blog_posts.postName }}" src="{{ blog_posts.image | prepend: relative_url }}" >
-                {% assign day = page.date | date: "%-d"  %}
-                {% case day %}
-                    {% when '1' or '21' or '31' %}{{ day }}st
-                    {% when '2' or '22' %}{{ day }}nd
-                    {% when '3' or '23' %}{{ day }}rd
-                    {% else %}{{ day }}th
-                {% endcase %}
-                <span>{{ blog_posts.postName }} &mdash; {{ blog_posts.date | date: " %B, %Y" }}</span>
+                <span>{{ blog_posts.postName }} &mdash; {{ blog_posts.date | date: "%b %d, %Y" }}</span>
 
             </a>
 	    {% endfor %}

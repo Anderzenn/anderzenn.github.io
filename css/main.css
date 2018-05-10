@@ -410,6 +410,18 @@ a:hover {
 	border-bottom-right-radius: 5px;
 }
 
+.notes {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.note .single img {
+	height: 350px;
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
 
 /* 3440 */
 @media screen and (max-width: 3440px) {

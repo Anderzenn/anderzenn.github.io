@@ -9,7 +9,7 @@ comments: true
             <h1 class="title">{{ page.title }} {{ page.postName }}</h1>
 			
 			<h2 class="date"><info datetime="{{ page.date }}">
-				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
+				{{ page.date | date: "%b %d, %Y" }} {% if page.author %} by {{ page.author }} {% endif %}
 			</info></h2>
 			<!-- Post content -->
 			<div class="notebody">
@@ -17,7 +17,8 @@ comments: true
 			</div>
 			<!-- Post info -->
 			<div class="noteinfo">
-			<!-- include some categories and tags maybe? -->
+            <!-- include some categories and tags maybe? -->
+                <span>{% if page.category %}Categories: {{ page.category }} {% endif %}</span>
 			</div>
 
 			<hr>
