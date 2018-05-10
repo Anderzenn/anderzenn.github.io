@@ -24,6 +24,7 @@ comments: true
 					{% else %}
 					  {% assign categories = page.categories %}
 					{% endif %}
+					Categories: 
 					{% for category in categories %}
 					<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
 					{% unless forloop.last %}&nbsp;{% endunless %}
