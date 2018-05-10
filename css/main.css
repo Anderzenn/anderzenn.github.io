@@ -383,6 +383,7 @@ a:hover {
 }
 
 .posts a {
+	display: block;
 	height: 600px;
 	background: #A3A3A3;
 }
@@ -392,7 +393,8 @@ a:hover {
 	width: 100%;
 	display: block;
 	object-fit: cover;
-	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .posts a span {
@@ -401,6 +403,8 @@ a:hover {
 	display: block;
 	text-align: center;
 	line-height: 50px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 
