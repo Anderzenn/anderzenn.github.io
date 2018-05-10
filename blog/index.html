@@ -5,9 +5,9 @@ title: Anderzenn &bull; Blog
 	<div class="posts">
 
       {% for post in site.posts %}
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}
+        <a href="{{ post.url }}" title="{{ post.title }}">
             <img alt="{{ post.title }}" src="{{ post.image | prepend: relative_url }}" >
-            <span>{{ post.date | date_to_string }}</span>
+            <span>{{ post.title }} &mdash; {{ post.date | date_to_string }}</span>
 
         </a>
 	  {% endfor %}
