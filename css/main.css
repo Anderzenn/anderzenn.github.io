@@ -445,6 +445,13 @@ a:hover {
 	background: #cc181e;
 	padding: 5px 8px;
 	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.noteinfo a:hover {
+	color: #fff;
+	background: #911c1c;
 }
 
 
