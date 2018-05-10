@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Anderzenn &bull; First Post"
+title: "Anderzenn &bull; "
+postName: "First Post"
 date: 2018-05-10
 image: "/img/articles/article1.jpg"
 ---
