@@ -440,6 +440,10 @@ a:hover {
 	margin: 40px auto;
 }
 
+.notecomments .avatar img {
+	border-radius: 48px;
+}
+
 .noteinfo a {
 	display: inline-block;
 	color: #fff;
@@ -461,6 +465,7 @@ a:hover {
 }
 
 #archives .archive-group h3 {
+	display: inline-block;
 	color: #fff;
 	background: #cc181e;
 	padding: 5px 8px;
