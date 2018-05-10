@@ -422,6 +422,16 @@ a:hover {
 	object-fit: cover;
 }
 
+.notebody p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.notebody br {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 .notecomments {
 	margin-top: 40px;
 	margin-bottom: 40px;
