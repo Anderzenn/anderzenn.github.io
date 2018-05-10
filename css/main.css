@@ -377,6 +377,31 @@ a:hover {
 	width: 350px;
 }
 
+.posts {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.posts a {
+	height: 600px;
+	background: #A3A3A3;
+}
+
+.posts a img {
+	height: 550px;
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.posts a span {
+	height: 50px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+}
 
 
 /* 3440 */
