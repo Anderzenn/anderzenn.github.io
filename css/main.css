@@ -441,7 +441,7 @@ a:hover {
 }
 
 .notecomments .avatar img {
-	border-radius: 48px;
+	border-radius: 48px!important;
 }
 
 .noteinfo a {
