@@ -1,6 +1,7 @@
 name: Anderzenn - Blog
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+baseurl: http://anderzenn.github.io
 
 defaults:
   -
