@@ -416,7 +416,7 @@ a:hover {
 }
 
 .note .blogImage {
-	height: 350px;
+	height: 475px;
 	width: 100%;
 	display: block;
 	object-fit: cover;
@@ -433,6 +433,7 @@ a:hover {
 }
 
 .notecomments {
+	width: 50%;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
