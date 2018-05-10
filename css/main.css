@@ -440,6 +440,13 @@ a:hover {
 	margin: 40px auto;
 }
 
+.noteinfo a {
+	color: #fff;
+	background: #cc181e;
+	padding: 5px 8px;
+	border-radius: 5px;
+}
+
 
 /* 3440 */
 @media screen and (max-width: 3440px) {
