@@ -8,7 +8,7 @@ title: Anderzenn &bull; Blog
         {% for blog_posts in site.posts %}
             <a href="{{ blog_posts.url }}" title="{{ blog_posts.postName }}">
                 <img alt="{{ blog_posts.postName }}" src="{{ blog_posts.image | prepend: relative_url }}" >
-                <span>{{ blog_posts.postName }} &mdash; {{ blog_posts.date | date: "%b %d, %Y" }}</span>
+                <span>{{ blog_posts.postName }} &mdash; {{ blog_posts.date | date_to_string: "ordinal", "US" }}</span>
 
             </a>
 	    {% endfor %}
