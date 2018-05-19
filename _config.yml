@@ -32,35 +32,3 @@ highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
-
-sources:
-  - assets/css
-  - assets/fonts
-  - assets/images
-  - assets/videos
-  - assets/javascript
-  - assets/video
-  - assets/image
-  - assets/img
-  - assets/js
-  - assets/portfolio
-  - _assets/css
-  - _assets/fonts
-  - _assets/images
-  - _assets/videos
-  - _assets/javascript
-  - _assets/video
-  - _assets/image
-  - _assets/img
-  - _assets/js
-  - _assets/portfolio
-  - css
-  - fonts
-  - images
-  - videos
-  - javascript
-  - video
-  - image
-  - img
-  - js
-  - portfolio
