@@ -1,3 +1,10 @@
 branches:
   only:
     - gh-pages
+    - /.*/
+    
+matrix:
+  include:
+    - php: 5.6
+      env:
+        - SYMFONY_VERSION='3.4.*'
