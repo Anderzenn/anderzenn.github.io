@@ -15,7 +15,6 @@ timezone: Europe/Copenhagen
 # Build settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-paginate: 7
 assets:
   digest: true
 
