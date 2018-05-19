@@ -1,24 +1,10 @@
 branches:
   only:
-<<<<<<< HEAD
     - gh-pages
     - /.*/
-    
-matrix:
-  include:
-    - php: 5.6
-      env:
-        - SYMFONY_VERSION='3.4.*'
-=======
-  - gh-pages
-  - /.*/
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
 
 matrix:
   include:
     - php: 5.6
       env:
         - SYMFONY_VERSION='3.4.*'
->>>>>>> origin/master
