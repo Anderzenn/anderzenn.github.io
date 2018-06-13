@@ -1,0 +1,31 @@
+# Site settings
+title: Andersenn
+name: Anderzenn - Blog
+owner: Mads Andersen
+email: thedanishmotovlogger@gmail.com
+twitter_username: dkmotovlogger
+github_username: Anderzenn
+url: "http://anderzenn.github.io"
+timezone: Europe/Copenhagen
+
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+paginate: 7
+assets:
+  digest: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
