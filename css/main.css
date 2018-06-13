@@ -389,7 +389,6 @@ a:hover {
 	margin-bottom: 40px;
 	margin-top: 40px;
 	border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .posts a img {
@@ -498,15 +497,6 @@ a:hover {
 	}
 }
 
-@media screen and (max-width: 2560px) {
-
-.notecomments {
-	width: 90%;
-	margin: 40px auto;
-}
-
-}
-
 /* 1920 */
 @media screen and (max-width: 1920px) {
     .header {
@@ -545,26 +535,6 @@ a:hover {
 		width: 189px;
 		height: 189px;
 	}
-}
-
-@media screen and (max-width: 1200px) {
-	
-
-.posts {
-	width: 90%;
-}
-
-.posts a {
-	height: 300px;
-}
-
-.posts a img {
-	height: 250px;
-}
-
-.posts a span {
-	font-size: 0.7em;
-}
 }
 
 /* iPad Pro Portrait */

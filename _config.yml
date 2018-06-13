@@ -1,6 +1,5 @@
-# Site settings
-title: Andersenn
 name: Anderzenn - Blog
+<<<<<<< HEAD
 owner: Mads Andersen
 email: thedanishmotovlogger@gmail.com
 url: "http://anderzenn.github.io"
@@ -16,3 +15,15 @@ assets:
 # Conversion
 markdown: kramdown
 highlighter: rouge
+=======
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+baseurl: http://anderzenn.github.io
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+>>>>>>> parent of 88c32d7... Various changes and fixes
