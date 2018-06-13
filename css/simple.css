@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Satisfy|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Poppins|Satisfy');
 
 * {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-smooth: always;
