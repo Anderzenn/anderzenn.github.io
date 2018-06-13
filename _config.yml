@@ -1,5 +1,4 @@
 name: Anderzenn - Blog
-<<<<<<< HEAD
 owner: Mads Andersen
 email: thedanishmotovlogger@gmail.com
 url: "http://anderzenn.github.io"
@@ -26,4 +25,3 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
->>>>>>> parent of 88c32d7... Various changes and fixes
