@@ -2,7 +2,7 @@
 layout: post
 author: "Mads Andersen"
 postName: "First Post"
-date: 2018-05-10 01:18:01 +2
+date: 2018-05-10 01:18:01 +0200
 image: "/img/articles/article1.jpg"
 categories: [Update, May 2018]
 ---

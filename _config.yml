@@ -12,9 +12,3 @@ permalink: /blog/:year/:month/:day/:title
       
 # Conversion
 markdown: kramdown
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
