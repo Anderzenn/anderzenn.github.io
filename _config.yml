@@ -1,5 +1,5 @@
 # Site settings
-title: Andersenn
+title: Anderzenn
 name: Anderzenn - Blog
 owner: Mads Andersen
 email: thedanishmotovlogger@gmail.com
@@ -9,7 +9,6 @@ timezone: Europe/Copenhagen
 
 # Build settings
 permalink: /blog/:year/:month/:day/:title
-paginate: 7
       
 # Conversion
 markdown: kramdown

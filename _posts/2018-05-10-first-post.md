@@ -1,9 +1,8 @@
 ---
 layout: post
 author: "Mads Andersen"
-title: "Anderzenn &bull; "
 postName: "First Post"
-date: 2018-05-10 01:18:01 
+date: 2018-05-10 01:18:01 +2
 image: "/img/articles/article1.jpg"
 categories: [Update, May 2018]
 ---
