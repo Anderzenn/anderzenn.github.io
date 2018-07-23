@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Poppins|Satisfy');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-smooth: always;
+	box-sizing:border-box;
+}
+
+html, body {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #AB2222;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#bcktt {
+	position: fixed;
+	z-index: 9000;
+	right: 1%;
+	bottom: 2%;
+	width: 42px;
+	height: 42px;
+	background: #4A4A4A;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#bcktt a {
+	font-size: 22px;
+	color: #fff;
+	position: absolute;
+	display: block;
+}
+#bcktt a i {
+	position: absolute;
+	padding-top: 5px;
+	padding-left: 14px;
+	padding-bottom: 5px;
+	padding-right: 13px;
+}
+
+.constructionH {
+	position: absolute;
+	display: inline-block;
+	top: 25%;
+	text-align: center;
+	text-shadow: #4A4A4A 2px 2px 5px;
+	z-index: 99;
+	color: #fff;
+	font-size: 2.3vw;
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+#content {
+    width: 100%;
+	height: 100vh;
+    background-image: linear-gradient(135deg, rgba(29, 0, 58, 0.2), rgba(68, 37, 37, 0.2)), url('../img/caspar-rubin-220712-unsplash.jpg');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	-webkit-filter: grayscale(50%);
+}
+
+.bgImg {
+    width: 100%;
+	height: 100vh;
+    background-image: linear-gradient(135deg, rgba(29, 0, 58, 0.2), rgba(68, 37, 37, 0.2)), url('../img/caspar-rubin-220712-unsplash.jpg');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	-webkit-filter: blur(2px) grayscale(50%);
+	-webkit-mask-box-image: -webkit-linear-gradient(transparent 0%, transparent 65%, black 80%);
+}
+
+.nav {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	right: 5%;
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	text-shadow: rgb(43, 43, 43) 2px 2px 5px;
+}
+
+.nav li a{
+	color: #fff;
+}
+
+.nav li a:hover {
+	border-bottom: solid 2px;
+}
