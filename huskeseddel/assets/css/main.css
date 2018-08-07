@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Raleway');
+* {
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div#bg {
+    width: 100%;
+	height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#main {
+    max-width: 100%;
+    width: 55%;
+    height: 80%;
+    background: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgb(46, 46, 46);
+
+    position:absolute; /*it can be fixed too*/
+    left:0; 
+    right:0;
+    top:0; 
+    bottom:0;
+    margin:auto;
+
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width:100%;
+    max-height:100%;
+    overflow:hidden;
+
+}
+
+#main:after{
+    content: '';
+    width: 110%;
+    height: 110%;
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: -25px;  
+    bottom: 0;
+    box-shadow: inset 0 0 0 5000px rgba(255, 255, 255, 0.521);
+    filter: blur(5px);
+    -moz-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -o-filter: blur(5px);
+}
+
+#main table caption {
+    margin-bottom: 20px;
+    color: rgb(41, 41, 41);
+}
+
+#main table, th, td {
+    position: relative;
+    z-index: 99;
+    border-bottom: 2px solid rgba(53, 53, 53, 0.342);
+    border-collapse: collapse;
+}
+
+#main table tr:nth-child(even) {
+    background: rgba(175, 175, 175, 0.274);
+}
+
+#main table tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.274);
+}
+
+#main table .tText {
+    opacity: 1;
+    color: rgb(31, 31, 31);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main table .item {
+    text-align: left;
+}
+
+#main table .price {
+    text-align: right;
+}

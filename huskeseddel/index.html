@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Mads Andersen &bull; Huskeseddel</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+	<body>
+        <div id="bg">
+            <div id="main">
+                <table style="width:100%">
+                    <caption><h1>Huskeseddel</h1></caption>
+
+                    <!--##       Top Text       ##-->
+                    <tr>
+                    <th class="item tText">Ting</th>
+                    <th class="price tText">Pris</th>
+                    </tr>
+
+                    <!--##        Items        ##-->
+                    <tr>
+                        <td class="item tText">Panasonic Lumix DMC-GX80</td>
+                        <td class="price tText">Elgiganten: 3 999 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">Intel i7 7820X</td>
+                        <td class="price tText">Komplett: 3 699 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">HyperX Predator 32GB Ram</td>
+                        <td class="price tText">Komplett: 3 333 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">OMEGA 2018</td>
+                        <td class="price tText">Secret Lab: 2 500 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">Razer Tiamat 7.1 V2</td>
+                        <td class="price tText">Razer: 1 790 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">Wacom Intuos M BT</td>
+                        <td class="price tText">Elgiganten: 1 599 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">MSI X299 Raider</td>
+                        <td class="price tText">Komplett: 1 589 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">Razer Huntsman Elite</td>
+                        <td class="price tText">Razer: 1 570 kr</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="item tText">BOSS Bottled Night 50ml</td>
+                        <td class="price tText">Matas: 535 kr</td>
+                    </tr>
+
+                    <tr>
+                        <td class="item tText">Tørrestativ</td>
+                        <td class="price tText">Jem &amp; Fix: 79 kr</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            var d = new Date(), h = d.getHours(), i;
+
+            if (h < 6) i = "assets/img/night.jpg";
+            else if (h < 19) i = "assets/img/day.jpg";
+            else i = "night.jpg";
+
+            document.getElementById("bg").style.backgroundImage = "url("+i+")";
+        </script>
+	</body>
+</html>
