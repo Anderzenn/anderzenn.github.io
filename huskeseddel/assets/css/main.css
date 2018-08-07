@@ -89,6 +89,7 @@ div#bg {
 #main table .tText {
     opacity: 1;
     color: rgb(31, 31, 31);
+    font-size: 1.4vh;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
