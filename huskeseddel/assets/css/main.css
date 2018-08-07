@@ -27,8 +27,8 @@ div#bg {
 }
 
 #main {
-    max-width: 100%;
-    width: 55%;
+    max-width: 90%;
+    width: 800px;
     height: 80%;
     background: inherit;
     padding-top: 20px;
@@ -44,7 +44,6 @@ div#bg {
     margin:auto;
 
     /*this to solve "the content will not be cut when the window is smaller than the content": */
-    max-width:100%;
     max-height:100%;
     overflow:hidden;
 
