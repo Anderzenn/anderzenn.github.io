@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Life is Strange 2</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="img/LiS2_Logo.png" /></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange-2/buy" target="_blank">Pre-Order</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="header-video">
+                <video id="video" src="video/Life is Strange 2 Official Reveal Trailer [ESRB].mp4" autoplay loop></video>
+                <button class="mute-video"></button>
+                <input id="vol-control" class="range vertical-heighest-first round" value="0" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" orient="vertical" />
+            </div>
+        </main>
+    </div>
+    <footer>
+        <span>Life is Strange 2 &copy; 2018 Square Enix Ltd. All Rights Reserved. LIFE IS STRANGE 2 and LIFE IS STRANGE are registered trademarks or trademarks of Square Enix Ltd. SQUARE ENIX and the SQUARE ENIX logo are registered trademarks or trademarks of Square Enix Holdings Co., Ltd.</span>
+    </footer>
+
+    <script>
+        var player = document.getElementById('video');
+        var volumeLevel = player.volume;
+
+        function SetVolume(val) {
+            console.log('Before: ' + player.volume);
+            player.volume = val / 100;
+            console.log('After: ' + player.volume);
+            volumeLevel = player.volume;
+
+            if ($("video").prop('muted', true) && val > 0.1) {
+                $("video").prop('muted', false);
+                $(".mute-video").addClass('unmute-video');
+            } else if (val <= 0) {
+                $(".mute-video").removeClass('unmute-video');
+            }
+        }
+
+        $("video").prop('muted', true);
+
+        $(".mute-video").click(function () {
+            if ($("video").prop('muted')) {
+                $("video").prop('muted', false);
+                $(this).addClass('unmute-video');
+                player.volume = 0.3;
+
+            } else {
+                $("video").prop('muted', true);
+                $(this).removeClass('unmute-video');
+            }
+            console.log($("video").prop('muted'))
+        });
+    </script>
+</body>
+</html>
