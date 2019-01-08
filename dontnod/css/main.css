@@ -1,0 +1,932 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #464646;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../img/pattern.jpg) repeat;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 20px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #fff;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 13px;
+    width: 50px;
+    height: 50px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 24px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    box-shadow: 0px 0px 8px #464646;
+}
+
+a.homeAnchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+#navbar {
+    position: fixed;
+    overflow: hidden;
+    width: 1160px;
+    height: 160px;
+    background: #fff;
+    z-index: 99;
+    transition: ease 0.4s;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+}
+
+#navbar #logo {
+    width: 40%;
+    object-fit: contain;
+    height: 160px;
+    transition: ease 0.4s;
+    object-position: left center;
+    filter: invert(80%);
+}
+
+#navbar nav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    padding: 20px 35px;
+    text-decoration: none;
+    transition: ease 0.2s;
+    font-weight: bold;
+}
+
+.nav ul li a.active {
+    border-bottom: solid 2px #464646;
+}
+
+.nav ul li:hover a {
+    border-bottom: solid 2px #464646;
+}
+
+header {
+    padding-top: 160px;
+}
+
+header .carousel {
+    height: 470px;
+    width: 100%;
+    background: #6d6d6d;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header .carousel img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+header .carousel video {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+main #welcTxt {
+    display: flex;
+    font-size: 70px;
+    width: 1160px;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main .home {
+    min-height: 470px;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 200px;
+}
+
+main .home .projectBox {
+    border: solid 2px #464646;
+    height: 280px;
+    width: 280px;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+main .home .projectBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .home .projectBox h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-full {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+    float: left;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+main .home .moreBtnBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+main .home .moreBtnBox a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: solid 2px #464646;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+}
+
+main .gallery {
+    min-height: 795px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 45px;
+    margin-bottom: 200px;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+}
+
+.modalBlur {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: blur(75%);
+}
+
+
+
+
+/* The Modal (background) */
+.modalPrjct {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalPrjct-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    /* 5% from the top and centered */
+    padding: 20px;
+    border-radius: 5px;
+    width: 800px;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.modalPrjct-content h3 {
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.modalPrjct-content .category {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    margin-top: -5px;
+}
+
+.modalPrjct-content .platform {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+}
+
+.modalPrjct-content .year {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+
+}
+
+.modalPrjct-content p {
+    margin-top: 15px;
+}
+
+.modalPrjct-content .bgHeader {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    position: relative;
+    height: 900px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    z-index: 105;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1010;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumbnail {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    border: solid 2px #464646;
+}
+
+main .about {
+    min-height: 570px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 200px;
+}
+
+main .about .projectBox {
+    overflow: hidden;
+    height: 270px;
+    width: 140px;
+    text-align: center;
+}
+
+main .about .projectBox a,
+main .about .projectBox p {
+    display: inline-block;
+    width: 140px;
+    font-size: 14px;
+}
+
+main .about .projectBox a {
+    font-size: 12.5px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: ease 0.1s;
+}
+
+main .about .projectBox p {
+    font-weight: bold;
+}
+
+main .about .projectBox .title {
+    font-weight: normal;
+}
+
+main .about .projectBox a ion-icon {
+    transition: ease 0.1s;
+}
+
+main .about .projectBox a:hover {
+    border-bottom: solid 2px #1dcaff;
+    color: #1dcaff;
+}
+
+main .about .projectBox a:hover ion-icon {
+    color: #1dcaff;
+}
+
+main .about .projectBox img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left center;
+    border: solid 2px #464646;
+}
+
+main .about .projectBox img:hover {
+    object-position: right center;
+}
+
+
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9 {
+    float: left;
+    width: 16.7%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+main .contact {
+    min-height: 570px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 50px;
+}
+
+main .contact h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 65px;
+}
+
+main .contact .contactContainer {
+    display: flex;
+    justify-content: center;
+}
+
+main .contact .contactBox {
+    width: 268px;
+    height: 248px;
+    text-align: center;
+    padding-top: 0px;
+    margin: 40px;
+    border: solid 2px #464646;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .contact .contactBox .metro {
+    margin-top: 40px;
+}
+
+main .contact .contactBox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 268px;
+    height: 248px;
+    border: none;
+}
+
+.metro span.m,
+.metro span.rer {
+    border: 2px solid #14489e;
+}
+
+.metro span.m,
+.metro span.rer,
+.metro span.rerE {
+    background: #fff;
+}
+
+.metro span.m7 {
+    background: #eb9db2;
+}
+
+.metro span.m12 {
+    background: #188c5a;
+}
+
+.metro span.rer {
+    margin-left: 20px;
+}
+
+.metro span.rerE {
+    border: 2px solid #d07fb5;
+}
+
+.metro span.m::before,
+.metro span.rer::before {
+    color: #14489e;
+}
+
+.metro span::before {
+    content: 'M';
+    position: absolute;
+    font-size: 20px;
+    left: 4px;
+}
+
+.metro span.m7::before {
+    content: '7';
+    color: #fff;
+    top: 1px;
+    left: 9px;
+}
+
+.metro span.m12::before {
+    content: '12';
+    color: #fff;
+    top: 1px;
+}
+
+.metro span.rer::before {
+    content: 'RER';
+    font-size: 12px;
+    left: 2px;
+    top: 5px;
+}
+
+.metro span.rerE::before {
+    content: 'E';
+    color: #d07fb5;
+    left: 6px;
+}
+
+.metro span {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+
+main .contact .contactForm {
+    margin-top: 20px;
+    width: 40%;
+}
+
+main .contact .contactForm input[type=text],
+main .contact .contactForm input[type=email] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+main .contact .contactForm select {
+    width: 93%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+}
+
+main .contact .contactForm textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    min-height: 64px;
+    /* Add a top margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+main .contact .contactForm option:disabled {
+    font-style: italic;
+}
+
+main .contact .contactForm .warning {
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.error {
+    border: solid 1px #E30E0E !important;
+}
+
+.error::placeholder {
+    color: #E30E0E;
+}
+
+.error:focus {
+    border: solid 1px #ccc !important;
+}
+
+
+main .contact .contactForm input::placeholder,
+main .contact .contactForm textarea::placeholder {
+    font-style: italic;
+}
+
+main .contact .contactForm textarea {
+    height: 200px;
+}
+
+/* Style the submit button with a specific background color etc */
+main .contact .contactForm input[type=submit] {
+    background-color: #464646;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #464646;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -200px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.tooltip .tooltiptext b {
+    color: #fff;
+    font-size: 16px;
+}
+
+.tooltip .tooltiptext b:last-child {
+    margin-top: 10px;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+hr {
+    border: none;
+    margin: 10px 0;
+    background: #fff;
+    height: 2px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background: #464646;
+    text-align: center;
+}
+
+footer .footerLogo {
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+}
+
+footer .footerLogo img {
+    width: 100%;
+    height: 75px;
+    object-fit: contain;
+}
+
+.footerLinks {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer a:hover {
+    border-bottom: solid 2px #fff;
+}
+
+footer ion-icon {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer .socialLinks {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer .socialLinks a:hover {
+    border-bottom: 0;
+}
+
+footer .socialLinks .twitterLink:hover ion-icon {
+    color: #1dcaff;
+}
+
+footer .socialLinks .facebookLink:hover ion-icon {
+    color: #3B5998;
+}
+
+footer .socialLinks .youtubeLink:hover ion-icon {
+    color: #CC181E;
+}
+
+footer .socialLinks ion-icon {
+    color: #fff;
+}
+
+footer p {
+    width: 100%;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
