@@ -1,0 +1,58 @@
+#notification {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#notification.successful {
+    display: block!important;
+    background: #2BBD30;
+}
+
+#notification.unSuccessful {
+    display: block!important;
+    background: #E31B1B;
+}
+
+form[name="formValidation"] {
+    background: #F7F7F7;
+    width: 500px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px #C2C2C2;
+    border-radius: 5px;
+}
+
+form[name="formValidation"] label {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+form[name="formValidation"] input[type="email"] {
+    display: block;
+    border: solid 1px #C2C2C2;
+    height: 40px;
+    width: 80%;
+    text-indent: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+form[name="formValidation"] input[type="submit"] {
+    display: block;
+    background: #2BBD30;
+    height: 40px;
+    width: 20%;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+

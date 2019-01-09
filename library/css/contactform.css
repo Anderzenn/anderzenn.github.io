@@ -1,0 +1,51 @@
+.contactForm {
+    width: 500px;
+    text-align: left;
+    padding: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    background: #F7F7F7;
+    box-shadow: 0px 0px 5px 0px #C2C2C2;
+}
+
+.contactForm label {
+    width: 15%;
+    display: inline-block;
+}
+
+.contactForm input[type="text"], .contactForm input[type="email"] {
+    width: 84%;
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 20px;
+    text-indent: 5px;
+    border-radius: 3px;
+    border: solid 1px #C2C2C2;
+}
+
+.contactForm textarea {
+    width: 100%;
+    resize: none;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #C2C2C2;
+}
+
+.contactForm input[type="submit"] {
+    background: #fff;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 1px #C2C2C2;
+}
+
+.error {
+    color: #f00!important;
+    box-shadow: 0px 0px 5px 1px #f00;
+}
+
+input.error::placeholder, textarea.error::placeholder {
+    color: #f00!important;
+}

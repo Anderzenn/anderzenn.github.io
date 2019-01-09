@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Library</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contactform.css">
+        <link rel="stylesheet" href="prism/prism.css">
+	</head>
+	<body>
+        <section class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Contact Form</a></li>
+                    <li><a href="meta.html">Meta Tags</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+            <h2 id="title">Contact Form</h2>
+            <div class="contactForm">
+                <form name="formValidation" action="#" method="post">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" placeholder="">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required name="email" placeholder="">
+
+                    <label for="topic">Emne:</label>
+                    <input type="text" id="topic" name="topic" placeholder="">
+
+                    <textarea id="message" name="message" placeholder=""></textarea>
+
+                    <input type="submit" value="Send" onclick="validate(document.formValidation)">
+                </form>
+            </div>
+            
+            <figure>
+                <figcaption>Contact Form - HTML</figcaption>
+                <pre class="language-html">
+                <code>
+    <xmp>
+    <form action="#" method="post">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" placeholder="">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required name="email" placeholder="">
+
+        <label for="topic">Emne:</label>
+        <input type="text" id="topic" name="topic" placeholder="">
+
+        <textarea id="message" name="message" placeholder=""></textarea>
+
+        <input type="submit" value="Send" onclick="validate()">
+    </form>
+    </xmp>
+                </code>
+                </pre>
+            </figure>
+            
+            <figure>
+                <figcaption>Contact Form - CSS</figcaption>
+                <pre class="language-css">
+                <code>
+                .contactForm {
+    width: 500px;
+    text-align: left;
+    padding: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    background: #F7F7F7;
+    box-shadow: 0px 0px 5px 0px #C2C2C2;
+}
+
+.contactForm label {
+    width: 15%;
+    display: inline-block;
+}
+
+.contactForm input[type="text"], .contactForm input[type="email"] {
+    width: 84%;
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 20px;
+    text-indent: 5px;
+    border-radius: 3px;
+    border: solid 1px #C2C2C2;
+}
+
+.contactForm textarea {
+    width: 100%;
+    resize: none;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #C2C2C2;
+}
+
+.contactForm input[type="submit"] {
+    background: #fff;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 1px #C2C2C2;
+}
+
+.error {
+    color: #f00!important;
+    box-shadow: 0px 0px 5px 1px #f00;
+}
+
+input.error::placeholder, textarea.error::placeholder {
+    color: #f00!important;
+}
+                </code>
+                </pre>
+            </figure>
+            
+            <figure>
+                <figcaption>Contact Form - JavaScript</figcaption>
+                <pre class="language-js">
+                <code>
+            function validate() {
+                var firstName = document.getElementById("name");
+                var firstNameError = document.getElementById("name");
+                firstName.placeholder = "";
+                firstNameError.classList.remove("error");
+
+                if (firstName.value.length == 0) {
+                    firstNameError.placeholder = "Skal udfyldes!";
+                    firstNameError.classList.add("error");
+                }
+
+                var email = document.getElementById("email");
+                var emailError = document.getElementById("email");
+                email.placeholder = "";
+                emailError.classList.remove("error");
+
+                if (email.value.length == 0) {
+                    emailError.placeholder = "Skal udfyldes!";
+                    emailError.classList.add("error");
+                }
+
+                var lastName = document.getElementById("topic");
+                var lastNameError = document.getElementById("topic");
+                lastName.placeholder = "";
+                lastNameError.classList.remove("error");
+
+                if (lastName.value.length == 0) {
+                    lastNameError.placeholder = "Skal udfyldes!";
+                    lastNameError.classList.add("error");
+                }
+
+                var message = document.getElementById("message");
+                var messageError = document.getElementById("message");
+                message.placeholder = "";
+                messageError.classList.remove("error");
+
+                if (message.value.length == 0) {
+                    messageError.placeholder = "Skal udfyldes!";
+                    messageError.classList.add("error");
+                }
+            }
+                </code>
+                </pre>
+            </figure>
+            
+            
+        </section>
+        <script src="prism/prism.js"></script>
+        <script>
+            function validate(Form) {
+                var firstName = document.getElementById("name");
+                var firstNameError = document.getElementById("name");
+                firstName.placeholder = "";
+                firstNameError.classList.remove("error");
+
+                if (firstName.value.length == 0) {
+                    firstNameError.placeholder = "Skal udfyldes!";
+                    firstNameError.classList.add("error");
+                }
+
+                var email = document.getElementById("email");
+                var emailError = document.getElementById("email");
+                email.placeholder = "";
+                emailError.classList.remove("error");
+
+                if (email.value.length == 0) {
+                    emailError.placeholder = "Skal udfyldes!";
+                    emailError.classList.add("error");
+                }
+
+                var lastName = document.getElementById("topic");
+                var lastNameError = document.getElementById("topic");
+                lastName.placeholder = "";
+                lastNameError.classList.remove("error");
+
+                if (lastName.value.length == 0) {
+                    lastNameError.placeholder = "Skal udfyldes!";
+                    lastNameError.classList.add("error");
+                }
+
+                var message = document.getElementById("message");
+                var messageError = document.getElementById("message");
+                message.placeholder = "";
+                messageError.classList.remove("error");
+
+                if (message.value.length == 0) {
+                    messageError.placeholder = "Skal udfyldes!";
+                    messageError.classList.add("error");
+                }
+            }
+        </script>
+	</body>
+</html>
