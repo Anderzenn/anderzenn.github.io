@@ -1,0 +1,35 @@
+.brand-logo i {
+    font-size: 3rem!important;
+    margin-top: 12%;
+}
+
+section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.tabs .indicator {
+    background-color: #b71c1c;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: transparent;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  h4 {
+      color: #b71c1c;
+  }
+
+  footer {
+      padding: 5px;
+  }
