@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(19, 19, 19);
+}
+
+#bg {
+  position: fixed;
+  z-index: -99;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  object-position: center;
+  transform: scale(1.1);
+}
+
+header {
+  width: 100%;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+header img {
+  width: 500px;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  height: 300px;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.3);
+  width: 960px;
+  min-height: 300px;
+  margin: auto;
+  border-radius: 8px;
+  max-height: 700px;
+  overflow: hidden;
+  text-align: center;
+  border: solid 1px rgba(255, 255, 255, 0.75);
+  margin-bottom: 100px;
+}
+
+main table#tableH {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+main table#tableH tr {
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+main table#tableH tr:first-child {
+  background: rgba(255, 255, 255, 0.75)!important;
+}
+
+main table#tableH tr:first-child th {
+  color: rgb(19, 19, 19);
+  font-weight: normal;
+}
+
+main table#tableH tr td, main table#tableH tr th {
+  height: 50px;
+  padding: 5px;
+}
+
+main table#tableM {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+main table#tableM tr {
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+main table#tableM tr:first-child th {
+  color: rgb(19, 19, 19);
+  font-weight: normal;
+}
+
+main table#tableM tr td, main table#tableM tr th {
+  height: 50px;
+  padding: 5px;
+}
+
+main table#tableM tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+main table#tableM tr td .status {
+  padding: 2px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+main table#tableM tr td ion-icon {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-bottom: solid 2px transparent;
+  transition: ease 0.1s;
+}
+
+main table#tableM tr td a.edit ion-icon:hover {
+  border-bottom: solid 2px #159915;
+  color: #159915;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: ease 0.1s;
+}
+
+.steamLink {
+  color: #000;
+  text-decoration: none;
+}
+
+.steamLink:hover {
+  color: rgb(46, 46, 46);
+  text-decoration: underline;
+}
+
+.sNew {
+  background: #bd1c1c;
+}
+
+.sProgress {
+  background: #ec913c;
+}
+
+.sDone {
+  background: #159915;
+}
+
+.clear {
+  clear:both;
+}
+
+.rabLnk {
+  display: block;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+main h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 52px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main h4 {
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+main form label {
+  width: 150px;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+main form input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main form input:checked ~ img {
+  box-shadow: 0px 0px 5px 2px #00aeff;
+}
+
+main form img {
+  height: 200px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main form .voteBox {
+  margin-bottom: 50px;
+}
+
+main form .voteBox input {
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main form .voteBox input:first-child {
+  background: #00aeff;
+}
+
+main form .voteBox input:first-child:hover {
+  background: #0080bb;
+}
+
+main form .voteBox input:last-child {
+  background: #ec913c;
+}
+
+main form .voteBox input:last-child:hover {
+  background: #bb6f29;
+}
+
+main #form2 label {
+  display: inline-block;
+}
+
+main #form2 input:checked ~ span {
+  box-shadow: 0px 0px 5px 2px #00aeff;
+}
+
+main #form2 span {
+  color: #000;
+  display: inline-block;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
