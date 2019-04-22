@@ -151,6 +151,15 @@ main table#tableM tr td a.edit ion-icon:hover {
   color: #fff;
 }
 
+.disabled {
+  display: none!important;
+}
+
+.disabledR {
+  cursor: default!important;
+  box-shadow: none!important;
+}
+
 
 
 main h1 {
