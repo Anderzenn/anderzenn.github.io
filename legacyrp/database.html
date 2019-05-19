@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Legacy &ndash; EMS Database</title>
+    <link rel="stylesheet" href="css/database.css">
+    <link rel="stylesheet" href="css/fakeLoader.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+  </head>
+  <body onload="javascript: typeWriter()">
+    <div class="fakeLoader"></div>
+    <p id="date"></p>
+    <p class="">
+      Welcome <span id="user">&lt;USER&gt;</span><br>
+      This is a Database used for the EMS. Here you will have access to everything you require.
+    </p>
+
+      <span class="title">EMS</span>
+      <a target="_BLANK" href="https://docs.google.com/document/d/1VK9X-2govSLLoKnH1YMY37ci8F8m0jjIFeDcJ51B0VE">Standard Operating Procedures (SOP)</a><br>
+      <a target="_BLANK" href="https://docs.google.com/document/d/12l5WShFp0PmIh2BFQ17_qR8bNw6pt7UlY6oGrALK8lw">EMS Handbook</a>
+
+    <p class="title">
+      Fire Department<br>
+      To be added
+    </p>
+
+    <p class="title">
+      <span>Data Input</span>
+      <a target="_BLANK" href="https://docs.google.com/forms/d/1Azs-kwI1KSfPNcwbvWCYUFyD8n9h9QTnV8DvsbGNLdU">Medical Submission Form</a><br>
+      <a target="_BLANK" href="https://docs.google.com/forms/d/e/1FAIpQLSf4VnH5PugFWtuvI5qV6E9Yb1RYvSF9QsfAhsRFUpF8nbHk7A/viewform">EMS Complaints Form</a><br>
+      <a target="_BLANK" href="https://docs.google.com/forms/d/e/1FAIpQLScFDs1fv0kvStefNgIfB6wS6mqhjmzVpiLucppViG9njjPFPw/viewform">LOA Request</a><br>
+      <a target="_BLANK" href="https://docs.google.com/forms/d/e/1FAIpQLSfSoPcbgMK03XkJb0HMi56UiAcvPULBSECXgFTz23RdpwcrMw/viewform">Phone A Friend</a><br>
+      <a target="_BLANK" href="https://docs.google.com/forms/d/e/1FAIpQLSffogE2y6Grpjv5BL1x_m4ABfiSSRImuw_mbYwHF6KtMkS8Rw/viewform">Suggestions</a>
+    </p>
+
+    <p class="title">
+      Medical Admin<br>
+      <a target="_BLANK" href="https://docs.google.com/spreadsheets/d/1YJIA2RPf0PsRkPm-wPvw_7tBoZtY8cgLpl_mS-F2RUo">Roster</a><br>
+      <a target="_BLANK" href="https://docs.google.com/spreadsheets/d/1tPWo-Ec0VCWBPys7m7KN_38Xe2toqqTAdKrc2YgcZRk">LOA/Applications Requests Data</a><br>
+      <a target="_BLANK" href="https://docs.google.com/spreadsheets/d/1tPWo-Ec0VCWBPys7m7KN_38Xe2toqqTAdKrc2YgcZRk">Patient Database</a><br>
+      <a target="_BLANK" href="https://docs.google.com/spreadsheets/d/1Co2JbkeSDOQ-iKZfJ4tL_eGMZd-OUrgf7-gS2EXqZI8">EMS Complaints</a><br>
+      <a target="_BLANK" href="https://docs.google.com/spreadsheets/d/1lfVt9MwHm78MByQsqCaX6S2XmOi4uRI6Ju4vlXq_byw">Access Database</a><br>
+      <a target="_BLANK" href="https://docs.google.com/spreadsheets/d/1vSYZwPCNewviKilC6aLH2072t73r9f6WchmFB1tZ6C4">Suggestion Responses</a>
+    </p>
+
+    <p id="copyright">Made with &lt;3 by Brandon Whittle/Mads Andersen &ndash; Credit to Elijah Wilson<span id="underScore" class="blink">_</span></p>
+
+    <script>
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+
+      today = dd + '.' + mm + '.' + yyyy;
+      /*document.getElementById("tDate").innerHTML = today;*/
+
+      var i = 0;
+      var txt = 'Todays Date: ' + today; /* The text */
+      var speed = 25; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("date").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+    <script>
+      $.fakeLoader({
+        timeToHide: 1500,
+        bgColor: '#000',
+        spinner: 'spinner4'
+      });
+    </script>
+  </body>
+</html>

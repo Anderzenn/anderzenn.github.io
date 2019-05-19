@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+  font-size: 26px;
+  color: #fff;
+}
+
+body {
+  background: #000;
+  padding: 20px;
+}
+
+blink, .blink {
+  -webkit-animation: blink 1s step-end infinite;
+  -moz-animation: blink 1s step-end infinite;
+  -o-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@-moz-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@-o-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@keyframes blink {
+  67% { opacity: 0 }
+}
+
+#date {
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-top: 32px;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 20px;
+}
+
+.typewriter {
+  overflow: auto;
+  white-space: no-wrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
