@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Test</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <div id="login_div" class="main-div">
+      <h3>Login Test</h3>
+      <input type="email" placeholder="Your Email" id="email_field">
+      <input type="password" placeholder="Your Password" id="password_field">
+
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+      <h3 id="userWelcome">Welcome User</h3>
+      <p>Welcome to the Login Test. You're currently logged in.</p>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDB4g5Del7Je33GY12ygOx19SWSPpSINXg",
+        authDomain: "legacy-movie-night-voting.firebaseapp.com",
+        databaseURL: "https://legacy-movie-night-voting.firebaseio.com",
+        projectId: "legacy-movie-night-voting",
+        storageBucket: "legacy-movie-night-voting.appspot.com",
+        messagingSenderId: "119207331604",
+        appId: "1:119207331604:web:b64f994c872eec56"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
