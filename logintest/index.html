@@ -5,20 +5,37 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div class="container">
 
-    <div id="login_div" class="main-div">
-      <h3>Login Test</h3>
-      <input type="email" placeholder="Your Email" id="email_field">
-      <input type="password" placeholder="Your Password" id="password_field">
+      <div id="login_div" class="main-div">
+        <div class="loginContainer">
+          <h1>Login</h1>
+          <input type="email" placeholder="Your Email" id="email_field">
+          <input type="password" placeholder="Your Password" id="password_field">
 
-      <button onclick="login()">Login</button>
-    </div>
+          <button onclick="login()">Login</button>
+        </div>
+      </div>
 
-    <div id="user_div" class="loggedin-div">
-      <h3 id="userWelcome">Welcome User</h3>
-      <p>Welcome to the Login Test. You're currently logged in.</p>
-
-      <button onclick="logout()">Logout</button>
+      <div id="user_div" class="loggedin-div">
+        <div class="loggedinContainer">
+          <h3 id="userWelcome">Welcome User</h3>
+          <p>Welcome to the Login Test. You're currently logged in.</p>
+  
+          <button onclick="logout()">Logout</button>
+  
+          <h1>Profile</h1>
+          <label for="dName">Display Name:</label>
+          <input type="text" name="dName" placeholder="Your Display Name" value="John Doe">
+          
+          <label for="eMail">Email:</label>
+          <input type="email" name="eMail" placeholder="Your Email" value="johndoe@example.com">
+          
+          <label for="dPic">Display Picture:</label>
+          <input type="url" name="dPic" placeholder="Image URL" value="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png">
+        </div>
+      </div>
     </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->

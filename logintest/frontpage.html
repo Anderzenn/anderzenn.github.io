@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/mDatabase.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul>
+            <li class="left"><a href="" class="logo"><img src="img/emsLogo.png" alt="Logo"></a></li>
+            <li id="welcomeMessage" class="welcomeMsg">Welcome, <span id="welDUser">User</span>.</li>
+            <li id="loginBtn" class="right"><a href="" class="loginLink">Login</a></li>
+            <li id="logoutBtn" class="right"><a href="" class="logoutLink" onclick="logout()">Logout</a></li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div id="login_div">
+          <h1>Login</h1>
+          <div class="loginContainer mainDiv">
+            <input type="email" placeholder="Your Email" id="email_field">
+            <input type="password" placeholder="Your Password" id="password_field">
+  
+            <button onclick="login()">Login</button>
+          </div>
+        </div>
+        
+        <div id="profileDiv">
+          <h1>Profile</h1>
+          <div class="mainDiv">
+            <img class="userAvatar" id="uAvatar" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png">
+            <label>Display Name</label>
+            <input type="name" name="userName" value="John Doe" id="pDName">
+            <label>Email</label>
+            <input type="email" name="userEmail" value="john.doe@example.com" id="pEmail"><div id="vEmail"><ion-icon name="checkmark"></ion-icon></div>
+            <label>Avatar</label>
+            <input type="url" name="userURL" value="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" id="pAvatar">
+
+            <div class="profileButtons">
+              <input type="button" value="Edit" name="btnEdit" id="pBtnEdit" onclick="pEdit()">
+              <input type="button" value="Update" name="btnUpdate" id="pBtnUpdate" onclick="pUpdate()">
+              <input type="button" value="Cancel" name="btnCancel" id="pBtnCancel" onclick="pCancel()">
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      Copyright &copy; <span id="footerName" onmouseover="footerH()" onmouseout="footerL()">Brandon Whittle</span>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-performance.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDB4g5Del7Je33GY12ygOx19SWSPpSINXg",
+        authDomain: "legacy-movie-night-voting.firebaseapp.com",
+        databaseURL: "https://legacy-movie-night-voting.firebaseio.com",
+        projectId: "legacy-movie-night-voting",
+        storageBucket: "legacy-movie-night-voting.appspot.com",
+        messagingSenderId: "119207331604",
+        appId: "1:119207331604:web:b64f994c872eec56"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // Initialize Performance Monitoring and get a reference to the service
+      var perf = firebase.performance();
+    </script>
+    <script src="js/magic.js"></script>
+  </body>
+</html>
