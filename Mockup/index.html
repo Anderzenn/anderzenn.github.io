@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartyBuzz.dk | Så kører festen!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="bttBtn" title="Go to top">&triangle;</button> 
+
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+        </div>
+    </div>
+
+  <header>
+    <div>
+        <h1>PartyBuzz</h1>
+        <p class="changing-text-container">
+            <span class="changing-text">Firmafester</span>
+            <span class="changing-text">Polterabend</span>
+            <span class="changing-text">Studentergilder</span>
+            <span class="changing-text">Events</span>
+        </p>
+    </div>
+    <nav>
+      <a href="/galleri.html">Galleri</a>
+      <a href="#busses">Vores Busser</a>
+      <a href="#">Priser</a>
+      <a href="#">Praktisk Info</a>
+      <a href="#">Salgsbetingelser</a>
+      <a href="#">Kontakt Os</a>
+      <button class="button cta">Få et uforpligtende tilbud!</button>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-container">
+        <div class="slideshow-wrapper">
+            <img src="img/2822.jpg" class="slideshow-item" />
+            <img src="img/2823.jpg" class="slideshow-item" />
+            <img src="img/341368397_778359326836298_8431919451782847858_n.jpg" class="slideshow-item" />
+            <img src="img/dans i partybussen.jpg" class="slideshow-item" />
+            <img src="img/dejlige piger i partybussen.JPEG" class="slideshow-item" />
+            <img src="img/friske piger i partybussen 2.jpg" class="slideshow-item" />
+            <img src="img/glade piger i partybussen.JPEG" class="slideshow-item" />
+            <img src="img/partybus fest i baren.jpg" class="slideshow-item" />
+            <img src="img/partybus fest i bussen.JPEG" class="slideshow-item" />
+            <img src="img/partybus festen kører.JPEG" class="slideshow-item" />
+            <img src="img/partybus piger fest.jpg" class="slideshow-item" />
+        </div>
+        <div class="hero-content">
+            <h2>Brug for en mobil fest?<br/>Vi får festen på vejen!</h2>
+            <div class="herobuttons">
+                <button class="button">Få et uforpligtende tilbud!</button>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+
+  <section class="section" id="busses">
+    <div class="sectionContainer">
+        <h2>Vores Busser</h2>
+        <p>Vores busser er special indrettet så du kan have et ordenligt fest på vejen!<br />Med musikanlæg, stripperstang, toiletter, samt meget mere - skal du nok være i sjove omgivelser!</p>
+        <h3>Bus #1</h3>
+        <div class="busses">
+            <h4>Indretning</h4>
+            <img src="img/Bus 1/bussens indretning.png" />
+
+            <h4>Faciliteter</h4>
+            <div class="sectionInnerBox">
+                awdawdawdjawd
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section fwblack" id="prices">
+    <div class="sectionContainer">
+        <h2 class="right">Priser</h2>
+        <p>123456789</p>
+    </div>
+  </section>
+
+  <section class="section" id="practical-info">
+    <div class="sectionContainer">
+        <h2>Praktisk Info</h2>
+        <div class="practical-info">
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerInfo">
+        <div>
+            <p>CVR: 40 38 71 29</p>
+            <p>Tlf: 40 19 91 73</p>
+            <p>Tlf: 20 61 21 51</p>
+            <p>Mail: mail@partybuzz.dk</p>
+        </div>
+        <span class="verticalLine"></span>
+        <div class="footerCenterBox">
+            <h2>PartyBuzz.dk</h2>
+            <p>v/Bach Industries</p>
+            <p>Industrivej 4, Assens</p>
+            <p>9550 Mariager</p>
+        </div>
+        <span class="verticalLine"></span>
+        <div>
+            LINKS
+        </div>
+    </div>
+    <p>PartyBuzz.dk &copy; 2025 All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      document.documentElement.style.setProperty('--scroll', scrollY);
+    });
+
+    let bttBtn = document.getElementById("bttBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            bttBtn.style.display = "flex";
+        } else {
+            bttBtn.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0; // Safari
+        document.documentElement.scrollTop = 0; // Other browsers
+    }
+
+    const slideshowItems = document.getElementsByClassName("slideshow-item");
+    let slideshowIndex = 1;
+
+    setInterval(() => {
+        Array.from(slideshowItems).forEach((item,index) => {
+            if (slideshowIndex < slideshowItems.length) {
+                item.style.transform = `translateX(-${slideshowIndex*100}%)`
+            }
+        })
+
+        if (slideshowIndex < slideshowItems.length) {
+            slideshowIndex++;
+        } else {
+            slideshowIndex = 0;
+        }
+    }, 10000)
+
+    var words = document.getElementsByClassName('changing-text');
+    var wordArray = [];
+    var currentWord = 0;
+
+    words[currentWord].style.opacity = 1;
+    for (var i = 0; i < words.length; i++) {
+        splitLetters(words[i]);
+    }
+
+    function changeWord() {
+        var cw = wordArray[currentWord];
+        var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+        for (var i = 0; i < cw.length; i++) {
+            animateLetterOut(cw, i);
+        }
+
+        for (var i = 0; i < nw.length; i++) {
+            nw[i].className = 'letter behind';
+            nw[0].parentElement.style.opacity = 1;
+            animateLetterIn(nw, i);
+        }
+
+        currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+    }
+
+    function animateLetterOut(cw, i) {
+        setTimeout(function() {
+            cw[i].className = 'letter out';
+        }, i*80);
+    }
+
+    function animateLetterIn(nw, i) {
+        setTimeout(function() {
+            nw[i].className = 'letter in';
+        }, 340+(i*80));
+    }
+
+    function splitLetters(word) {
+        var content = word.innerHTML;
+        word.innerHTML = '';
+        var letters = [];
+        for (var i = 0; i < content.length; i++) {
+            var letter = document.createElement('span');
+            letter.className = 'letter';
+            if (content.charAt(i) == " ") {
+                letter.innerHTML = " ";
+            } else {
+                letter.innerHTML = content.charAt(i);
+            }
+            word.appendChild(letter);
+            letters.push(letter);
+        }
+
+        wordArray.push(letters);
+    }
+
+    changeWord();
+    setInterval(changeWord, 4000);
+
+
+  </script>
+</body>
+</html>
