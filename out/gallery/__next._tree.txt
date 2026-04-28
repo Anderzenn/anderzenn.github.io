@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/11ya8vq-543bm.css","style"]
+:HL["/_next/static/chunks/0uf3owitcb471.css","style"]
 :HL["/_next/static/media/0b7c5b993c1057ea-s.p.0m8c~y~fgqyrc.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/115e7a2565b70400-s.p.0ldth1faq2ch-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/3cabd365f8c28a7b-s.p.0eqbee-1rhu-x.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -12,4 +12,4 @@
 :HL["https://fyrkatspillet.dk/wp-content/uploads/Gamle_Plakater/fyrkatspillet-plakat-2019-1-212x300.png","image"]
 :HL["https://fyrkatspillet.dk/wp-content/uploads/Gamle_Plakater/fyrkatspillet-plakat-2018-1-212x300.png","image"]
 :HL["https://fyrkatspillet.dk/wp-content/uploads/Gamle_Plakater/fyrkatspillet-plakat-2017-1-212x300.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"gallery","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ui9IQ5oy7tKD12A88AR-R"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"gallery","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"qgMDQfIUYHj9109JPeScF"}
